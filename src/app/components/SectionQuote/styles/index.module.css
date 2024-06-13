@@ -1,0 +1,79 @@
+.sectionQuote {
+  max-width: 1090px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--gray-600);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.blockquote {
+  max-width: 497px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quoteText {
+  color: var(--gray-50, #fff);
+  font-size: 16px;
+  font-family: var(--global-text-font);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+.ownerSignature {
+  width: 209px;
+  object-fit: cover;
+  align-self: flex-end;
+}
+
+.ownerImgContainer {
+  max-width: 400px;
+}
+
+.ownerImg {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  fill: var(--gray-150, #eaeaea);
+}
+
+.ownerImgFigcaption {
+  color: var(--grey-50, #fff);
+  font-family: var(--global-text-font, sans-serif);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-inline-start: 10px;
+  margin-block-start: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionQuote {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .blockquote {
+    gap: 72px;
+  }
+
+  .ownerImgContainer {
+    max-width: 276px;
+  }
+
+  .ownerImgFigcaption {
+    margin-block-start: 16px;
+  }
+}
+
+

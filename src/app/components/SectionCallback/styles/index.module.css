@@ -1,0 +1,77 @@
+.sectionQuote {
+  max-width: 1090px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: var(--gray-600);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.blockquote {
+  max-width: 497px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.quoteText {
+  color: var(--gray-50);
+  font-size: 1.125rem;
+  font-family: var(--global-text-font);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: left;
+}
+
+.ownerSignature {
+  width: 209px;
+  object-fit: cover;
+  align-self: flex-end;
+}
+
+.ownerImgContainer {
+  max-width: 400px;
+}
+
+.ownerImg {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  fill: var(--gray-150);
+}
+
+.ownerImgFigcaption {
+  color: var(--grey-50, #fff);
+  font-family: var(--global-text-font);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-inline-start: 1rem;
+  margin-block-start: 0.625rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionQuote {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5rem;
+  }
+
+  .blockquote {
+    gap: 4.5rem;
+  }
+
+  .ownerImgContainer {
+    max-width: 276px;
+  }
+
+  .ownerImgFigcaption {
+    margin-block-start: 1rem;
+  }
+}

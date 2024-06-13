@@ -1,0 +1,159 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--gray-600, #555);
+  border-radius: 16px 16px 0 0;
+  padding: 16px;
+}
+
+.footerText {
+  color: var(--gray-50, #fff);
+}
+
+.footerTopWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footerTitle {
+  color: var(--gray-50, #fff);
+  padding-bottom: 20px;
+}
+
+.footerLinkList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 100px;
+  flex-wrap: wrap;
+  list-style: none;
+  color: var(--gray-50, #fff);
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerNavList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  max-height: 100px;
+  flex-wrap: wrap;
+  list-style: none;
+  color: var(--gray-50, #fff);
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.footerContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerContactsBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto 1fr;
+  gap: 10px;
+}
+
+.footerContactsAddress {
+  grid-column: span 2;
+}
+
+.footerBottomWrapper {
+  border-top: var(--gray-50, #fff) 1px solid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footerBottomBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerStroyhouseLogo {
+  display: block;
+  width: 213px;
+  height: 67px;
+  background: var(--gray-50, #fff);
+  background: url("../../../assets/companyLogo/LogoStroyhouse_brus_white.svg")
+    no-repeat center;
+  background-size: contain;
+}
+
+.segezhaLogo {
+  display: block;
+  width: 117.808px;
+  height: 40px;
+  background: var(--gray-50, #fff) no-repeat center;
+  mask-image: url("../../../assets/companyLogo/segezha.svg");
+  background-size: contain;
+}
+
+.associationLogo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: var(--gray-50, #fff) no-repeat center;
+  mask-image: url("../../../assets/companyLogo/add.svg");
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 61px;
+  }
+
+  .footerTopWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footerBottomWrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto auto;
+    gap: 16px;
+  }
+
+  .footerBottomWrapper > div:nth-child(2) {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    flex-direction: row;
+  }
+
+  .footerBottomWrapper > div:nth-child(3),
+  .footerBottomWrapper > div:nth-child(4) {
+    grid-row: span 2;
+  }
+
+  .footerTitle {
+    padding-bottom: 62px;
+  }
+
+  .footerBottomWrapper {
+    padding-bottom: 40px;
+  }
+}
