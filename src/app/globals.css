@@ -3,9 +3,12 @@
 
 :root {
   /* Primary */
-  --primary-accent-red: #702;
-  --brand-secondary: #746c7b;
-  --brand-terry: #7c9373;
+  --primary-accent-red: rgb(119, 0, 34);
+  --brand-secondary: rgb(116, 108, 123);
+  --brand-terry: rgb(124, 147, 115);
+  --brand-terry-opacity-90: rgba(124, 147, 115 , 0.9);
+  --brand-terry-opacity-80: rgba(124, 147, 115 , 0.8);
+
   /* Gray */
   --gray-50: #fff;
   --gray-100: #f9f9f9;
@@ -17,6 +20,9 @@
 
   /* Title */
   --global-title-font: "Gotham Pro";
+
+  /* Shadows */
+  --box-shadow: rgba(120, 120, 120, 0.15);
 
   max-width: 1440px;
   min-width: 375px;
@@ -83,7 +89,10 @@ p {
 }
 
 .sectionWrapper {
-  padding: 16px;
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .linkCommon:hover {
@@ -106,6 +115,6 @@ p {
   }
 
   .sectionWrapper {
-    padding: 64px;
+    padding: 0 64px;
   }
 }

@@ -1,12 +1,13 @@
 .sectionPortfolio {
   background-color: var(--gray-50);
-  box-shadow: 0px 0px 40px 0px rgba(120, 120, 120, 0.15);
+  box-shadow: 0px 0px 40px 0px var(--box-shadow);
   flex-direction: column;
-  gap: 1.25rem;
+  justify-content: space-between;
+  gap: 20px;
   width: 100%;
   display: flex;
-  border-radius: 1rem;
-  padding: 1.25rem;
+  border-radius: 16px;
+  padding: 20px;
 }
 
 .portfolioImg {
@@ -15,15 +16,14 @@
   background-image: url("../../../assets/images/portfolio1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 1rem;
+  border-radius: 16px;
 }
 
 .sectionPortfolioText {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 20px;
 }
-
 
 .sectionPortfolioList {
   display: flex;
@@ -37,4 +37,24 @@
   font-weight: 400;
   line-height: 28px; /* 155.556% */
   padding-inline-start: 27px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .sectionPortfolio {
+   flex-direction: row-reverse;
+  }
+
+  .portfolioImg {
+    width: 608px;
+    height: 440px;
+  }
+
+  .sectionPortfolioText{
+    max-width: 497px;
+  }
+
+  .sectionPortfolioBtn {
+    width: 161px;
+  }
 }

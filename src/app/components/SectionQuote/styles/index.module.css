@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: max(40px, min(calc(100vw - 1203px), 237px));
   background-color: var(--gray-600);
   border-radius: 16px;
   padding: 20px;

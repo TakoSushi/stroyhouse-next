@@ -3,6 +3,7 @@ import { ButtonCommon } from "../ButtonCommon/ButtonCommon";
 
 export function SectionPortfolio() {
   return (
+    <div className="sectionWrapper">
     <section className={styles.sectionPortfolio}>
       <div className={styles.portfolioImg}></div>
       <div className={styles.sectionPortfolioText}>
@@ -13,8 +14,9 @@ export function SectionPortfolio() {
           <li>Двойной технадзор</li>
           <li>Поэтапная система оплаты</li>
         </ul>
-        <ButtonCommon />
+        <ButtonCommon classSpecify={styles.sectionPortfolioBtn}>проекты</ButtonCommon>
       </div>
     </section>
+    </div>
   );
 }

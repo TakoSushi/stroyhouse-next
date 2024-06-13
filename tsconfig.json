@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "dist/types/**/*.ts"
-  ],
+, "src/app/components/SectionCallback/SectionCallback.jsx", "src/app/components/SectionQuote/SectionQuote.tsx"  ],
   "exclude": [
     "node_modules"
   ]

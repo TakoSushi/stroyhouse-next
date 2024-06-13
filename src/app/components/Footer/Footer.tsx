@@ -113,20 +113,22 @@ export function Footer() {
         <div>
           <span className={styles.footerStroyhouseLogo}></span>
         </div>
-        <div className={`${styles.footerBottomBlock} ${styles.footerBottomBlockPolicy}`}>
+
+        <div>
           <p className={styles.footerText}>
             &copy; 2024 ООО &laquo;Строй Хауз&raquo;
           </p>
           <p className={styles.footerText}>Политика конфиденциальности</p>
         </div>
-        <div className={styles.footerBottomBlock}>
+
+        <div>
           <span className={styles.segezhaLogo}></span>
           <p className={styles.footerText}>
             Дилер и стратегический партнер SEGEZHA GROUP. Один из крупнейших
             поставщиков российских лесопромышленных холдингов
           </p>
         </div>
-        <div className={styles.footerBottomBlock}>
+        <div>
           <span className={styles.associationLogo}></span>
           <p className={styles.footerText}>
             Компания STROYHOUSE входит в Ассоциацию Деревянного домостроения

@@ -1,77 +1,62 @@
-.sectionQuote {
+.sectionCallback {
   max-width: 1090px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
-  gap: 1.25rem;
   background-color: var(--gray-600);
-  border-radius: 1rem;
-  padding: 1.25rem;
+  border-radius: 16px;
+  padding: 20px;
 }
 
-.blockquote {
-  max-width: 497px;
+.sectionCallbackTitleBlock {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: 20px;
 }
 
-.quoteText {
-  color: var(--gray-50);
-  font-size: 1.125rem;
-  font-family: var(--global-text-font);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.75rem;
-  text-align: left;
+.sectionCallbackTitleBlock h3 {
+  margin-bottom: 10px;
 }
 
-.ownerSignature {
-  width: 209px;
-  object-fit: cover;
-  align-self: flex-end;
+.sectionCallbackTextColor {
+  color: var(--gray-50, #fff);
 }
 
-.ownerImgContainer {
-  max-width: 400px;
+.socialLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;}
+
+.socialLinks > li {
+  width: 44px;
+  height: 44px;
+  background-color: var(--gray-50, #fff);
+  border-radius: 8px;
 }
 
-.ownerImg {
-  width: 100%;
-  height: auto;
-  border-radius: 1rem;
-  object-fit: cover;
-  fill: var(--gray-150);
+.sectionCallbackForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.ownerImgFigcaption {
-  color: var(--grey-50, #fff);
-  font-family: var(--global-text-font);
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem;
-  margin-inline-start: 1rem;
-  margin-block-start: 0.625rem;
+.sectionCallbackForm fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: none;
+}
+
+.sectionCallbackInputPhone {
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (min-width: 768px) {
-  .sectionQuote {
+  .sectionCallbackTitleBlock {
     flex-direction: row;
-    justify-content: space-between;
-    padding: 2.5rem;
-  }
-
-  .blockquote {
-    gap: 4.5rem;
-  }
-
-  .ownerImgContainer {
-    max-width: 276px;
-  }
-
-  .ownerImgFigcaption {
-    margin-block-start: 1rem;
   }
 }
