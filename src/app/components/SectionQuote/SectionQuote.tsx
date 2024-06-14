@@ -1,4 +1,4 @@
-import owner from "../../../../public/images/owner.png";
+import owner from "../../../../public/images/owner.jpg";
 import signature from "../../../../public/images/signatureOwnerFigma.png"
 import styles from "./styles/index.module.css";
 import Image from "next/image";
