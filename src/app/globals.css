@@ -39,6 +39,7 @@
   --brand-terry: rgb(124, 147, 115);
   --brand-terry-opacity-90: rgba(124, 147, 115, 0.9);
   --brand-terry-opacity-80: rgba(124, 147, 115, 0.8);
+  --background-white-opacity-75: rgba(255, 255, 255, 0.75);
 
   /* Gray */
   --gray-50: #fff;
@@ -93,13 +94,13 @@ a {
 h1 {
   color: var(--grey-50, #FFF);
   font-family: "Gotham Pro";
-  font-size: 42px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%;
-  /* 54.6px */
-  letter-spacing: 0.84px;
+  line-height: 130%; /* 31.2px */
+  letter-spacing: 0.48px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h3 {
@@ -156,6 +157,11 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 42px;
+    letter-spacing: 0.84px;
+  }
+
   h3 {
     font-size: 34px;
   }

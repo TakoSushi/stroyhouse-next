@@ -1,3 +1,44 @@
 .header {
-  background-color: rgba(0, 255, 0, 0.4);
+  width: calc(100% - 32px);
+  height: 56px;
+  padding: 4px;
+  background-color: var(--background-white-opacity-75, rgba(255, 255, 255, 0.75));
+  border-radius: 48px;
+
+  position: absolute;
+  top: 16px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLogo {
+  display: block;
+  width: 115.2px;
+  height: 36px;
+  background-image: url("../../../../../public/companyLogo/LogoStroyhouse_brus.svg");
+  background-repeat: no-repeat;
+}
+
+.headerBtn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: calc(100% - 128px);
+    height: 82px;
+    padding: 16px 32px;
+  }
+
+  .headerLogo {
+    width: 160px;
+    height: 50px;
+    background-image: url("../../../../../public/companyLogo/LogoStroyhouse_brus.svg");
+  }
+
+  .headerBtn {
+    display: block;
+    width: 210px;
+  }
 }

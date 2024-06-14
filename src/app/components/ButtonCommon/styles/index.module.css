@@ -5,6 +5,7 @@
   border: 1px solid var(--gray-50, #fff);
   background: var(--brand-terry, #7c9373);
   color: var(--gray-50, #fff);
+  white-space: nowrap;
 
   font-family: var(--global-title-font, "Gotham Pro");
   font-size: 12px;
@@ -28,8 +29,9 @@
 
 .commonBtn:hover {
   background-color: var(--brand-terry-opacity-90);
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .25s;;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .25s;
+  ;
 }
 
 .commonBtn:active {
