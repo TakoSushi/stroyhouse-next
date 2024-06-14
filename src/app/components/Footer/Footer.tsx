@@ -88,6 +88,33 @@ export function Footer() {
             </ul>
           </nav>
         </div>
+        <div className={styles.footerNav}>
+          <h4>проекты</h4>
+          <nav>
+            <ul className={`${styles.footerNavList} ${styles.footerNavListProject}`}>
+              <li>
+                <a className="linkCommon" href="#" title="Усадьбы и комплексы">
+                  Усадьбы и комплексы
+                </a>
+              </li>
+              <li>
+                <a className="linkCommon" href="#" title="Бани, комплексы, СПА">
+                  Бани, комплексы, СПА
+                </a>
+              </li>
+              <li>
+                <a className="linkCommon" href="#" title="1 этажные дома">
+                  1 этажные дома
+                </a>
+              </li>
+              <li>
+                <a className="linkCommon" href="#" title="2 этажные дома">
+                  2 этажные дома
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div className={styles.footerContacts}>
           <h4>контакты</h4>
           <div className={styles.footerContactsBlock}>
@@ -99,7 +126,7 @@ export function Footer() {
               <p className={styles.footerText}>Тел.</p>
               <p className={styles.footerText}>+7(495)645-44-30</p>
             </div>
-            <div className={styles.footerContactsAddress}>
+            <div>
               <p className={styles.footerText}>Адресс:</p>
               <p className={styles.footerText}>
                 Московская область, Истринский район, Веледниково, улица

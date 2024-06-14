@@ -1,4 +1,5 @@
 .header {
+  max-width: 1312px;
   width: calc(100% - 32px);
   height: 56px;
   padding: 4px;
@@ -10,6 +11,7 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .headerLogo {
@@ -17,7 +19,43 @@
   width: 115.2px;
   height: 36px;
   background-image: url("../../../../../public/companyLogo/LogoStroyhouse_brus.svg");
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+  margin-inline-start: 16px;
+}
+
+.headerRoundBtn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--grey-50, #FFF);
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.headerRoundBtn:hover {
+  border: 1px solid var(--Brand-Secondary, #746C7B);
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .25s;
+}
+
+.headerRoundBtn:active {
+  opacity: 0.8;
+}
+
+.headerRoundBtnCall::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: var(--brand-secondary, rgb(116, 108, 123)) no-repeat center;
+  mask-image: url("../../../../../public/icons/typeCall.svg");
+  background-size: contain;
 }
 
 .headerBtn {

@@ -31,7 +31,6 @@
   background-color: var(--brand-terry-opacity-90);
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .25s;
-  ;
 }
 
 .commonBtn:active {
