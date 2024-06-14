@@ -20,7 +20,7 @@
   gap: 40px;
 }
 
-.footerTopWrapper > div {
+.footerTopWrapper>div {
   max-width: 343px;
 }
 
@@ -41,7 +41,8 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
+  /* 125% */
 }
 
 .footerNav {
@@ -63,7 +64,8 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
 }
 
 .footerContacts {
@@ -94,7 +96,7 @@
   padding-bottom: 20px;
 }
 
-.footerBottomWrapper > div {
+.footerBottomWrapper>div {
   max-width: 343px;
   display: flex;
   flex-direction: column;
@@ -106,8 +108,7 @@
   width: 213px;
   height: 67px;
   background: var(--gray-50, #fff);
-  background: url("../../../assets/companyLogo/LogoStroyhouse_brus_white.svg")
-    no-repeat center;
+  background: url("../../../../../public/companyLogo/LogoStroyhouse_brus_white.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -116,7 +117,7 @@
   width: 117.808px;
   height: 40px;
   background: var(--gray-50, #fff) no-repeat center;
-  mask-image: url("../../../assets/companyLogo/segezha.svg");
+  mask-image: url("../../../../../public/companyLogo/segezha.svg");
   background-size: contain;
 }
 
@@ -125,7 +126,7 @@
   width: 40px;
   height: 40px;
   background: var(--gray-50, #fff) no-repeat center;
-  mask-image: url("../../../assets/companyLogo/add.svg");
+  mask-image: url("../../../../../public/companyLogo/add.svg");
   background-size: contain;
 }
 
@@ -141,11 +142,11 @@
     gap: 16px;
   }
 
-  .footerTopWrapper > div {
+  .footerTopWrapper>div {
     max-width: 100%;
   }
 
-  .footerTopWrapper > div:first-child {
+  .footerTopWrapper>div:first-child {
     max-width: 500px;
     grid-column: 1 / span 2;
   }
@@ -186,11 +187,11 @@
     padding-bottom: 40px;
   }
 
-  .footerBottomWrapper > div {
+  .footerBottomWrapper>div {
     gap: 16px;
   }
 
-  .footerBottomWrapper > div:nth-child(2) {
+  .footerBottomWrapper>div:nth-child(2) {
     grid-column: 1 / span 2;
     grid-row: 2;
     display: grid;
@@ -199,8 +200,8 @@
     max-width: 100%;
   }
 
-  .footerBottomWrapper > div:nth-child(3),
-  .footerBottomWrapper > div:nth-child(4) {
+  .footerBottomWrapper>div:nth-child(3),
+  .footerBottomWrapper>div:nth-child(4) {
     grid-row: span 2;
   }
 }

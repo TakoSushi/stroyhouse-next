@@ -1,5 +1,5 @@
-import owner from "../../assets/images/owner.png";
-import signature from "../../assets/images/signatureOwnerFigma.png";
+import owner from "../../../../public/images/owner.png";
+import signature from "../../../../public/images/signatureOwnerFigma.png"
 import styles from "./styles/index.module.css";
 import Image from "next/image";
 

@@ -6,13 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next build && npm run replaceFilePaths ",
+    "replaceFilePaths": "node replacer.js",
     "lint": "next lint"
   },
   "dependencies": {
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "serve": "^14.2.3"
+    "replace-in-file": "^7.2.0",
+    "serve": "^14.2.3",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@types/node": "^20",
