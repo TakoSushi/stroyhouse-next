@@ -1,4 +1,7 @@
 @import "./styles/normalize.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: "PT Sans";
@@ -46,6 +49,7 @@
   --gray-100: #f9f9f9;
   --gray-150: #eaeaea;
   --gray-600: #555;
+  --gray-600-opacity-10: rgb(85, 85, 85, .1);
 
   /* Text */
   --global-text-font: "PT Sans";
@@ -97,7 +101,8 @@ h1 {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 31.2px */
+  line-height: 130%;
+  /* 31.2px */
   letter-spacing: 0.48px;
   text-transform: uppercase;
   margin: 0;
@@ -134,6 +139,18 @@ p {
   /* 150% */
 }
 
+.lty-playbtn {
+  background: no-repeat center/122px 116px !important;
+  background-image: url("../../public/icons/iconPlayWithText.png") !important;
+}
+
+.lty-playbtn:hover {
+  opacity: .9;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .25s;
+}
+
 .sectionWrapper {
   width: 100%;
   padding: 0 16px;
@@ -145,7 +162,6 @@ p {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .25s;
-  ;
 }
 
 .linkCommon:hover {

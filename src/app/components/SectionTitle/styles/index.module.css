@@ -4,7 +4,7 @@
   background-color: #525a3f;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 24px;
   border-radius: 0 0 16px 16px;
@@ -25,13 +25,13 @@
     height: 820px;
     flex-direction: row;
     justify-content: start;
-    align-items: end;
+    align-items: flex-end;
     gap: 0;
     padding: 64px;
   }
 
   .sectionTitle h1 {
-    align-self: end;
+    align-self: flex-end;
     max-width: 100%;
   }
 
