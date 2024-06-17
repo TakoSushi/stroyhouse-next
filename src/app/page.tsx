@@ -8,6 +8,7 @@ import { SectionTitle } from "./components/SectionTitle/SectionTitle";
 import { SectionMap } from "./components/SectionMap/SectionMap";
 import { SectionVideo } from "./components/SectionVideo/SectionVideo";
 import { SectionRules } from "./components/SectionRules/SectionRules";
+import { SectionContragents } from "./components/SectionContragents/SectionContragents";
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -18,6 +19,7 @@ export default function Home() {
       <SectionCallback />
       <SectionPortfolio />
       <SectionQuote />
+      <SectionContragents />
       <SectionMap />
       <Footer />
     </main>
