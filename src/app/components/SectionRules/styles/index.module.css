@@ -1,29 +1,32 @@
-.rulesImg {
-  display: block;
+.sectionRules {
   width: 100%;
-  height: 20px;
-  object-fit: cover;
-}
-
-/* .rulesPaginationBase {
-  background-color: green;
-}
-
-.rulesPaginationWrapper {
   display: flex;
-  list-style: none;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
-  flex-direction: row;
+
+  gap: 20px;
+  background-color: var(--gray-100);
+  max-width: 600px;
 }
 
-.rulesPaginationItem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: red;
-} */
+.sectionRules>h3 {
+  width: 100%;
+  text-align: left;
+  color: var(--Brand-Secondary, #746C7B);
+}
+
+@media screen and (min-width: 768px) {
+  .sectionRules {
+    position: relative;
+    max-width: 100%;
+    flex-direction: row;
+  }
+
+  .sectionRules>h3 {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+  }
+}

@@ -3,12 +3,14 @@ import styles from './styles/index.module.css';
 import type  { RuleCardProps } from '../../types/entitiesTypes'; 
 
 
-function RuleCard({ cardImg, cardTitle, cardDescription }: RuleCardProps) {
+export function RuleCard({ cardImg, cardTitle, cardDescription }: RuleCardProps) {
   return (
-    <article>
+    <article className={styles.ruleCard}>
       <Image src={cardImg} alt={cardTitle} className={styles.rulesImg} />
-      <h4>{cardTitle}</h4>
-      <p>{cardDescription}</p>
+      <div className={styles.ruleCardTextBlock}>
+        <h4 className={styles.ruleCardTitle}>{cardTitle}</h4>
+        <p className={styles.ruleCardText}>{cardDescription}</p>
+      </div>
     </article>
   );
 }

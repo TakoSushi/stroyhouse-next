@@ -20,7 +20,8 @@
     "react-phone-input-2": "^2.15.1",
     "replace-in-file": "^7.2.0",
     "serve": "^14.2.3",
-    "sharp": "^0.33.4"
+    "sharp": "^0.33.4",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/node": "^20",

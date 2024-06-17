@@ -1,7 +1,4 @@
 @import "./styles/normalize.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @font-face {
   font-family: "PT Sans";
