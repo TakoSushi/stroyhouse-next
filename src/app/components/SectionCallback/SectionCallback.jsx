@@ -1,6 +1,7 @@
-'use client'
-import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
+"use client";
+import ru from "react-phone-input-2/lang/ru.json";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 import Image from "next/image";
 import { ButtonCommon } from "../ButtonCommon/ButtonCommon";
 
@@ -85,29 +86,41 @@ export function SectionCallback() {
           </ul>
         </div>
         <form className={styles.sectionCallbackForm}>
-          <fieldset>
+          <fieldset className={styles.sectionCallbackFieldset}>
             <div>
-              <label className={styles.sectionCallbackTextColor} htmlFor="name">
+              <label className={styles.sectionCallbackLabel} htmlFor="name">
                 Введите имя:
               </label>
               <input
-                className={styles.inputName}
+                className={styles.sectionCallbackInputName}
                 type="text"
                 placeholder="Введите ваше имя"
                 name="name"
                 required
               />
             </div>
-            <label className={styles.sectionCallbackTextColor} htmlFor="phone">
-              Введите телефон:
-            </label>
-            <PhoneInput
-              country={'us'}
-              value={'343434'}
-              // onChange={phone => this.setState({ phone })}
-            />
+            <div>
+              <label className={styles.sectionCallbackLabel} htmlFor="phone">
+                Номер телефона:
+              </label>
+              <PhoneInput
+                preferredCountries={["ru", "kz", "by"]}
+                localization={ru}
+                country={"ru"}
+                value={"7"}
+                placeholder="XXX-XX-XX"
+                inputProps={{
+                  name: "phone",
+                  required: true,
+                }}
+                containerClass={styles.PhoneInputContainer}
+                inputClass={styles.PhoneInputInput}
+                buttonClass={styles.PhoneInputBtn}
+                dropdownClass={styles.PhoneInputDropDown}
+              />
+            </div>
           </fieldset>
-          <ButtonCommon type="submit">отправить</ButtonCommon>
+          <ButtonCommon type="submit" size="large" classSpecify={styles.SectionCallbackSubmitBtn}>отправить</ButtonCommon>
         </form>
       </section>
     </div>

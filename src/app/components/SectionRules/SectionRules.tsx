@@ -6,20 +6,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { Pagination } from 'swiper/modules';
+import { EffectFade, Pagination } from 'swiper/modules';
 import { RuleCard } from "../RuleCard/RuleCard";
-
-import type { RuleCardProps } from '../../types/entitiesTypes';
-import cardImg1 from '../../../../public/images/rulesCompanyGallary1.jpg';
 
 import styles from "./styles/index.module.css";
 import "./styles/swiper.css";
 
-const defautArticle: RuleCardProps = {
-  cardImg: cardImg1,
-  cardTitle: 'Беспрецедентное качество',
-  cardDescription: 'Мы не никогда и нигде не экономим и не оптимизируем. Это основа нашей работы. Мы не зарабатываем на материалах. К нашей работе не докопаться, У нас независимый технадзор, клиент может ещё один нанимать если ему так спокойнее. Без недостатков без ошибок — безупречно',
-}
+import { rules } from './rules';
 
 export function SectionRules() {
 
@@ -38,32 +31,30 @@ export function SectionRules() {
           spaceBetween={50}
           slidesPerView={1}
           loop={true}
-          // onSlideChange={() => console.log('slide change')}
-          // onSwiper={(swiper) => console.log(swiper)}
           pagination={pagination}
           modules={[Pagination]}
           className="mySwiper"
         >
           <SwiperSlide className="mySwiperSlide">
-            <RuleCard cardImg={defautArticle.cardImg} cardTitle={defautArticle.cardTitle} cardDescription={defautArticle.cardDescription} />
+            <RuleCard cardImg={rules[0].cardImg} cardTitle={rules[0].cardTitle} cardDescription={rules[0].cardDescription} />
           </SwiperSlide>
           <SwiperSlide className="mySwiperSlide">
-            <RuleCard cardImg={defautArticle.cardImg} cardTitle={defautArticle.cardTitle} cardDescription={defautArticle.cardDescription} />
+            <RuleCard cardImg={rules[1].cardImg} cardTitle={rules[1].cardTitle} cardDescription={rules[1].cardDescription} />
           </SwiperSlide>
           <SwiperSlide className="mySwiperSlide">
-            <RuleCard cardImg={defautArticle.cardImg} cardTitle={defautArticle.cardTitle} cardDescription={defautArticle.cardDescription} />
+            <RuleCard cardImg={rules[2].cardImg} cardTitle={rules[2].cardTitle} cardDescription={rules[2].cardDescription} />
           </SwiperSlide>
           <SwiperSlide className="mySwiperSlide">
-            <RuleCard cardImg={defautArticle.cardImg} cardTitle={defautArticle.cardTitle} cardDescription={defautArticle.cardDescription} />
+            <RuleCard cardImg={rules[3].cardImg} cardTitle={rules[3].cardTitle} cardDescription={rules[3].cardDescription} />
           </SwiperSlide>
           <SwiperSlide className="mySwiperSlide">
-            <RuleCard cardImg={defautArticle.cardImg} cardTitle={defautArticle.cardTitle} cardDescription={defautArticle.cardDescription} />
+            <RuleCard cardImg={rules[0].cardImg} cardTitle={rules[0].cardTitle} cardDescription={rules[0].cardDescription} />
           </SwiperSlide>
           <SwiperSlide className="mySwiperSlide">
-            <RuleCard cardImg={defautArticle.cardImg} cardTitle={defautArticle.cardTitle} cardDescription={defautArticle.cardDescription} />
+            <RuleCard cardImg={rules[4].cardImg} cardTitle={rules[4].cardTitle} cardDescription={rules[4].cardDescription} />
           </SwiperSlide>
           <SwiperSlide className="mySwiperSlide">
-            <RuleCard cardImg={defautArticle.cardImg} cardTitle={defautArticle.cardTitle} cardDescription={defautArticle.cardDescription} />
+            <RuleCard cardImg={rules[5].cardImg} cardTitle={rules[5].cardTitle} cardDescription={rules[5].cardDescription} />
           </SwiperSlide>
         </Swiper>
       </section>

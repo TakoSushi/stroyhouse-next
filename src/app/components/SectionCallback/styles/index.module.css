@@ -11,9 +11,11 @@
 }
 
 .sectionCallbackTitleBlock {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 500px;
 }
 
 .sectionCallbackTitleBlock h3 {
@@ -38,7 +40,9 @@
 }
 
 .sectionCallbackForm {
+  width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
 }
@@ -46,8 +50,44 @@
 .sectionCallbackForm fieldset {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   border: none;
+  gap: 16px;
+  padding: 0;
+}
+
+.sectionCallbackLabel {
+  display: block;
+  color: var(--gray-50, #FFF);
+  font-family: var(--global-text-font, "PT Sans");
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  padding-inline-start: 16px;
+  padding-block-end: 4px;
+}
+
+.sectionCallbackLabel[for="name"] {
+  padding-inline-start: 24px;
+}
+
+.sectionCallbackInputName {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  padding: 0 24px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 40px;
+  border: 1px solid var(--gray-150, #EAEAEA);
+  background: var(--gray-50, #FFF);
+
+  color: var(---brand-secondary, #746C7B);
+  font-family: var(--global-text-font, "PT Sans");
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .sectionCallbackInputPhone {
@@ -55,8 +95,93 @@
   flex-direction: row;
 }
 
+/* Phone Input */
+.PhoneInputContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 8px;
+}
+
+.PhoneInputContainer>.PhoneInputInput {
+  width: 100%;
+  display: flex;
+  height: 56px;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 40px !important;
+  border: 1px solid var(--gray-150, #EAEAEA);
+  background: var(--gray-50, #FFF);
+
+  color: var(---brand-secondary, #746C7B);
+  font-family: var(--global-text-font, "PT Sans");
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.PhoneInputContainer>.PhoneInputBtn {
+  position: relative;
+  display: flex;
+  width: 120px;
+  height: 56px;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 40px !important;
+  border: 1px solid var(--gray-150, #EAEAEA);
+  background: var(--gray-50, #FFF) !important;
+}
+
+.PhoneInputBtn>.PhoneInputDropDown {
+  border-radius: 16px;
+  top: 30px;
+}
+
 @media screen and (min-width: 768px) {
+  .sectionCallback {
+    padding: 40px;
+    gap: 50px;
+  }
+
   .sectionCallbackTitleBlock {
+    max-width: none;
     flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .sectionCallbackTitleBlock h3 {
+    margin-bottom: 8px;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .sectionCallback {
+    gap: 72px;
+  }
+
+  .sectionCallbackForm {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .sectionCallbackForm fieldset {
+    width: 100%;
+    flex-direction: row;
+    gap: 32px
+  }
+
+  .sectionCallbackForm fieldset>div {
+    width: 100%;
+  }
+
+  .SectionCallbackSubmitBtn {
+    width: 177px;
   }
 }
