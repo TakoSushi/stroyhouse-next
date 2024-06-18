@@ -24,9 +24,8 @@
 
   .sectionRules>h3 {
     position: absolute;
-    top: 50%;
-    left: 15%;
-    /* transform: translate(-50%, -50%); */
+    top: 35px;
+    left: 18%;
     text-align: center;
   }
 }

@@ -32,7 +32,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "dist/types/**/*.ts",
+    "dist/types/**/*.ts", "src/app/components/SectionAboutCompany/SectionAboutCompany.tsx",
     // "src/app/components/SectionCallback/SectionCallback.jsx", "src/app/components/SectionQuote/SectionQuote.tsx", "src/app/components/SectionRules/SectionRules.tsx"
     ],
   "exclude": [
