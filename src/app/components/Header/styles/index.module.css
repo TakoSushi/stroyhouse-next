@@ -25,6 +25,33 @@
   margin-inline-start: 16px;
 }
 
+.footerNav {
+  display: none;
+}
+
+.footerNavList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  max-height: 100px;
+  list-style: none;
+  color: var(--brand-secondary, #746C7B);
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  /* 166.667% */
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+
+.headerBtnsBlock {
+  display: flex;
+  gap: 8px;
+}
+
 .headerRoundBtn {
   width: 48px;
   height: 48px;
@@ -48,16 +75,6 @@
   opacity: 0.8;
 }
 
-.headerRoundBtnCall::before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-  background: var(--brand-secondary, rgb(116, 108, 123)) no-repeat center;
-  mask-image: url("../../../../../public/icons/typeCall.svg");
-  background-size: contain;
-}
-
 .headerBtn {
   display: none;
 }
@@ -75,8 +92,26 @@
     background-image: url("../../../../../public/companyLogo/LogoStroyhouse_brus.svg");
   }
 
+  .headerBtnsBlock {
+    display: flex;
+    gap: 32px;
+  }
+
   .headerBtn {
     display: block;
     width: 210px;
   }
+}
+
+
+@media screen and (min-width: 1148px) {
+
+  .footerNav {
+    display: block;
+  }
+
+  .headerRoundBtnMenu {
+    display: none;
+  }
+
 }

@@ -1,3 +1,5 @@
+import { AddCompSvg } from "./AddCompSvg";
+import { SegezaSvg } from "./SegezaSvg";
 import styles from "./styles/index.module.css";
 
 export function Footer() {
@@ -149,14 +151,18 @@ export function Footer() {
         </div>
 
         <div>
-          <span className={styles.segezhaLogo}></span>
+          <span className={styles.segezhaLogo}>
+          <SegezaSvg />
+          </span>
           <p className={styles.footerText}>
             Дилер и стратегический партнер SEGEZHA GROUP. Один из крупнейших
             поставщиков российских лесопромышленных холдингов
           </p>
         </div>
         <div>
-          <span className={styles.associationLogo}></span>
+          <span className={styles.associationLogo}>
+            <AddCompSvg />
+          </span>
           <p className={styles.footerText}>
             Компания STROYHOUSE входит в Ассоциацию Деревянного домостроения
           </p>

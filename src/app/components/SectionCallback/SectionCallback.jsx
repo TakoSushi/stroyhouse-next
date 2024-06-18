@@ -85,22 +85,24 @@ export function SectionCallback() {
             </li>
           </ul>
         </div>
-        <form className={styles.sectionCallbackForm}>
+        <form className={styles.sectionCallbackForm} id="callbackForm">
           <fieldset className={styles.sectionCallbackFieldset}>
             <div>
-              <label className={styles.sectionCallbackLabel} htmlFor="name">
+              <label className={styles.sectionCallbackLabel} htmlFor="callbackForm_name">
                 Введите имя:
               </label>
               <input
                 className={styles.sectionCallbackInputName}
                 type="text"
+                id="callbackForm_name"
                 placeholder="Введите ваше имя"
                 name="name"
+                autocomplete="on"
                 required
               />
             </div>
             <div>
-              <label className={styles.sectionCallbackLabel} htmlFor="phone">
+              <label className={styles.sectionCallbackLabel} htmlFor="callbackForm_phone">
                 Номер телефона:
               </label>
               <PhoneInput
@@ -112,6 +114,8 @@ export function SectionCallback() {
                 inputProps={{
                   name: "phone",
                   required: true,
+                  id: "callbackForm_phone",
+                  autocomplete: "on",
                 }}
                 containerClass={styles.PhoneInputContainer}
                 inputClass={styles.PhoneInputInput}
@@ -120,7 +124,13 @@ export function SectionCallback() {
               />
             </div>
           </fieldset>
-          <ButtonCommon type="submit" size="large" classSpecify={styles.SectionCallbackSubmitBtn}>отправить</ButtonCommon>
+          <ButtonCommon
+            type="submit"
+            size="large"
+            classSpecify={styles.SectionCallbackSubmitBtn}
+          >
+            отправить
+          </ButtonCommon>
         </form>
       </section>
     </div>

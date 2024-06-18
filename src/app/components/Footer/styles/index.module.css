@@ -115,18 +115,12 @@
   display: block;
   width: 117.808px;
   height: 40px;
-  background: var(--gray-50, #fff) no-repeat center;
-  mask-image: url("../../../../../public/companyLogo/segezha.svg");
-  background-size: contain;
 }
 
 .associationLogo {
   display: block;
   width: 40px;
   height: 40px;
-  background: var(--gray-50, #fff) no-repeat center;
-  mask-image: url("../../../../../public/companyLogo/add.svg");
-  background-size: contain;
 }
 
 
