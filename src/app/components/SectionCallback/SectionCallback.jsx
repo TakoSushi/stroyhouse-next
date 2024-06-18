@@ -97,7 +97,7 @@ export function SectionCallback() {
                 id="callbackForm_name"
                 placeholder="Введите ваше имя"
                 name="name"
-                autocomplete="on"
+                autoComplete="on"
                 required
               />
             </div>
@@ -115,7 +115,7 @@ export function SectionCallback() {
                   name: "phone",
                   required: true,
                   id: "callbackForm_phone",
-                  autocomplete: "on",
+                  autoComplete: "on",
                 }}
                 containerClass={styles.PhoneInputContainer}
                 inputClass={styles.PhoneInputInput}

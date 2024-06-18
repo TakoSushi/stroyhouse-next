@@ -6,15 +6,13 @@ import type { TSliderSyncingProps } from ".";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import "./slick.css";
-// import "./slick-theme.css";
+
 import styles from "./styles/index.module.css";
 import Image from "next/image";
 
 const SliderSyncingComponent: FC<TSliderSyncingProps> = (props: TSliderSyncingProps) => {
   const { images, alt = '', arrowsFor, arrowsNav, responsiveNav, stylesSliderNav, stylesSliderFor } = props;
 
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [nav1, setNav1] = useState<Slider | undefined>();
   const [nav2, setNav2] = useState<Slider | undefined>();
 
@@ -26,23 +24,11 @@ const SliderSyncingComponent: FC<TSliderSyncingProps> = (props: TSliderSyncingPr
     slider2.current && setNav2(slider2.current);
   }, []);
 
-  useEffect(() => {
-    slider1.current && slider1.current.slickGoTo(currentSlide);
-    slider2.current && slider2.current.slickGoTo(currentSlide);
-  }, [currentSlide]);
-
-
-  const handleAfterChange = (currentSlideAfterChange: number) => {
-    setCurrentSlide(currentSlideAfterChange);
-  }
-
   return (
     <>
       <Slider
         asNavFor={nav2}
-        initialSlide={currentSlide}
         ref={slider1}
-        afterChange={handleAfterChange}
         className={stylesSliderFor}
         arrows={arrowsFor}
       >
@@ -57,7 +43,6 @@ const SliderSyncingComponent: FC<TSliderSyncingProps> = (props: TSliderSyncingPr
       <Slider
         asNavFor={nav1}
         ref={slider2}
-        afterChange={handleAfterChange}
         slidesToShow={4}
         swipeToSlide={true}
         focusOnSelect={true}
