@@ -1,13 +1,13 @@
 import { ButtonCommon } from "../ButtonCommon/ButtonCommon";
-import styles from "./styles/index.module.css";
+import "./sectionTitle_tamp.css";
 
 export function SectionTitle() {
   return (
-  <section className={styles.sectionTitle}>
+  <section className="sectionTitle">
     <h1>
       Дома премиум-класса по индивидуальным проектам
     </h1>
-    <ButtonCommon classSpecify={styles.sectionTitleBtnSize}>роскошные дома</ButtonCommon>
+    <ButtonCommon classSpecify="sectionTitleBtnSize">роскошные дома</ButtonCommon>
   </section>
   );
 }

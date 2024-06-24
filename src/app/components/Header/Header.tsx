@@ -1,5 +1,5 @@
 import { ButtonCommon } from "../ButtonCommon/ButtonCommon";
-import styles from "./styles/index.module.css";
+import "./header_tamp.css";
 
 const CallIconSvg = () => {
   return (
@@ -27,10 +27,10 @@ const MenuIconSvg = () => {
 
 export function Header() {
   return (
-    <header className={styles.header}>
-      <a href="#" className={styles.headerLogo}></a>
-      <nav className={styles.footerNav}>
-        <ul className={styles.footerNavList}>
+    <header className="header">
+      <a href="#" className="headerLogo"></a>
+      <nav className="headerNav">
+        <ul className="headerNavList">
           <li>
             <a className="linkCommon" href="#" title="О компании">
               проекты
@@ -53,14 +53,14 @@ export function Header() {
           </li>
         </ul>
       </nav>
-      <div className={styles.headerBtnsBlock}>
-        <button type="button" className={`${styles.headerRoundBtn} ${styles.headerRoundBtnCall}`}>
+      <div className="headerBtnsBlock">
+        <button type="button" className={`headerRoundBtn headerRoundBtnCall`}>
           <CallIconSvg />
         </button>
-        <button type="button" className={`${styles.headerRoundBtn} ${styles.headerRoundBtnMenu}`}>
+        <button type="button" className={`headerRoundBtn headerRoundBtnMenu`}>
           <MenuIconSvg />
         </button>
-        <ButtonCommon classSpecify={styles.headerBtn}>Задать вопрос</ButtonCommon>
+        <ButtonCommon classSpecify="headerBtn">Задать вопрос</ButtonCommon>
       </div>
     </header>
   );

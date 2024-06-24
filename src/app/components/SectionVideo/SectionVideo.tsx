@@ -1,8 +1,8 @@
 import { YouTubeEmbed } from '@next/third-parties/google'
 
-import styles from './styles/index.module.css'
+import "./sectionVideo_tamp.css"
 export function SectionVideo() {
-  return <section className={styles.sectionVideo}>
+  return <section className="sectionVideo">
     <YouTubeEmbed
       videoid="7PwMXIA4_RE"
       playlabel="Смотреть видео"

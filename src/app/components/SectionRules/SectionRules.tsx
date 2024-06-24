@@ -1,16 +1,14 @@
 'use client'
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { EffectFade, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import { RuleCard } from "../RuleCard/RuleCard";
 
-import styles from "./styles/index.module.css";
-import "./styles/swiper.css";
+import "./swiper.css";
+import "./sectionRules_tamp.css";
 
 import { rules } from './rules';
 
@@ -25,7 +23,7 @@ export function SectionRules() {
 
   return (
     <div className="sectionWrapper">
-      <section className={styles.sectionRules}>
+      <section className="sectionRules">
         <h3>Правила &laquo;строй хауз&raquo;</h3>
         <Swiper
           spaceBetween={50}

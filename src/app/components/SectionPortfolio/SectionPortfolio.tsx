@@ -1,20 +1,20 @@
-import styles from "./styles/index.module.css";
 import { ButtonCommon } from "../ButtonCommon/ButtonCommon";
+import "./sectionPortfolio_tamp.css";
 
 export function SectionPortfolio() {
   return (
     <div className="sectionWrapper">
-    <section className={styles.sectionPortfolio}>
-      <div className={styles.portfolioImg}></div>
-      <div className={styles.sectionPortfolioText}>
+    <section className="sectionPortfolio">
+      <div className="portfolioImg"></div>
+      <div className="sectionPortfolioText">
         <h3>Профессиональный подход</h3>
-        <ul className={styles.sectionPortfolioList}>
+        <ul className="sectionPortfolioList">
           <li>Полный цикл производства</li>
           <li>Гарантия на все виды работ</li>
           <li>Двойной технадзор</li>
           <li>Поэтапная система оплаты</li>
         </ul>
-        <ButtonCommon classSpecify={styles.sectionPortfolioBtn}>проекты</ButtonCommon>
+        <ButtonCommon classSpecify="sectionPortfolioBtn">проекты</ButtonCommon>
       </div>
     </section>
     </div>

@@ -1,0 +1,26 @@
+.commonBtn {
+  max-width: 343px;
+  width: 100%;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.commonBtnSizeMedium {
+  height: 44px;
+  padding: 12px 48px 10px 48px;
+}
+
+.commonBtnSizeLarge {
+  height: 56px;
+  padding: 20px 48px 16px 48px;
+}
+
+.commonBtn:hover {
+  background-color: var(--brand-terry-opacity-90);
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .25s;
+}
+
+.commonBtn:active {
+  background-color: var(--brand-terry-opacity-80);
+}

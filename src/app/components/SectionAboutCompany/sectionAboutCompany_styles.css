@@ -1,0 +1,19 @@
+.sectionAboutCompanyPreTitle {
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  padding-block-end: 8px;
+}
+
+.sectionAboutCompanyTitle {
+  padding-block-end: 20px;
+}
+
+.sectionAboutCompanyText {
+  font-style: italic;
+  padding-block-end: 24px;
+}

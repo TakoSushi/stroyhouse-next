@@ -2,97 +2,35 @@
 import ru from "react-phone-input-2/lang/ru.json";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import Image from "next/image";
 import { ButtonCommon } from "../ButtonCommon/ButtonCommon";
 
-import vkIcon from "../../../../public/icons/iconVk.svg";
-import telegrammIcon from "../../../../public/icons/iconTelegramm.svg";
-import ZenIcon from "../../../../public/icons/iconYandexZen.svg";
-import youtubeIcon from "../../../../public/icons/iconYoutube.svg";
-import pinterestIcon from "../../../../public/icons/iconPinterest.svg";
-
-import styles from "./styles/index.module.css";
+import "./sectionCallback_tamp.css";
+import { SocialLinkLine } from "../SocialLInkLine/SocialLinkLine";
 
 export function SectionCallback() {
   return (
     <div className="sectionWrapper">
-      <section className={styles.sectionCallback}>
-        <div className={styles.sectionCallbackTitleBlock}>
+      <section className="sectionCallback">
+        <div className="sectionCallbackTitleBlock">
           <div>
-            <h3 className={styles.sectionCallbackTextColor}>
+            <h3 className="sectionCallbackTextColor">
               Назначьте встречу
             </h3>
-            <p className={styles.sectionCallbackTextColor}>
+            <p className="sectionCallbackTextColor">
               Мы перезвоним для уточнения деталей и ваших указаний к
               предстоящему обсуждению.
             </p>
           </div>
-          <ul className={styles.socialLinks}>
-            <li>
-              <a
-                className="linkCommon"
-                href="https://www.youtube.com/channel/UCgkVDDQG-Ky0wQ8V16I_2zg"
-                target="_blank"
-                rel="nofollow"
-                title="YouTube"
-              >
-                <Image src={youtubeIcon} alt="YouTube" />
-              </a>
-            </li>
-            <li>
-              <a
-                className="linkCommon"
-                href="https://t.me/StroyiHouse"
-                target="_blank"
-                rel="nofollow"
-                title="Телеграмм"
-              >
-                <Image src={telegrammIcon} alt="Телеграмм" />
-              </a>
-            </li>
-            <li>
-              <a
-                className="linkCommon"
-                href="https://dzen.ru/stroyhouse"
-                target="_blank"
-                rel="nofollow"
-                title="Дзен"
-              >
-                <Image src={ZenIcon} alt="Вконтакте" />
-              </a>
-            </li>
-            <li>
-              <a
-                className="linkCommon"
-                href="https://vk.com/stroyhous"
-                target="_blank"
-                rel="nofollow"
-                title="Вконтакте"
-              >
-                <Image src={vkIcon} alt="Вконтакте" />
-              </a>
-            </li>
-            <li>
-              <a
-                className="linkCommon"
-                href="https://www.pinterest.ru/stroyhouse/"
-                target="_blank"
-                rel="nofollow"
-                title="Pinterest"
-              >
-                <Image src={pinterestIcon} alt="Instagram" />
-              </a>
-            </li>
-          </ul>
+         <SocialLinkLine />
         </div>
-        <form className={styles.sectionCallbackForm} id="callbackForm">
-          <fieldset className={styles.sectionCallbackFieldset}>
+        <form className="sectionCallbackForm" id="callbackForm">
+          <fieldset className="sectionCallbackFieldset">
             <div>
-              <label className={styles.sectionCallbackLabel} htmlFor="callbackForm_name">
-                Введите имя:
+              <label className="sectionCallbackLabel" htmlFor="callbackForm_name">
+                Ваше имя:
               </label>
               <input
-                className={styles.sectionCallbackInputName}
+                className="sectionCallbackInputName"
                 type="text"
                 id="callbackForm_name"
                 placeholder="Введите ваше имя"
@@ -102,7 +40,7 @@ export function SectionCallback() {
               />
             </div>
             <div>
-              <label className={styles.sectionCallbackLabel} htmlFor="callbackForm_phone">
+              <label className="sectionCallbackLabel" htmlFor="callbackForm_phone">
                 Номер телефона:
               </label>
               <PhoneInput
@@ -117,17 +55,17 @@ export function SectionCallback() {
                   id: "callbackForm_phone",
                   autoComplete: "on",
                 }}
-                containerClass={styles.PhoneInputContainer}
-                inputClass={styles.PhoneInputInput}
-                buttonClass={styles.PhoneInputBtn}
-                dropdownClass={styles.PhoneInputDropDown}
+                containerClass="PhoneInputContainer"
+                inputClass="PhoneInputInput"
+                buttonClass="PhoneInputBtn"
+                dropdownClass="PhoneInputDropDown"
               />
             </div>
           </fieldset>
           <ButtonCommon
             type="submit"
             size="large"
-            classSpecify={styles.SectionCallbackSubmitBtn}
+            classSpecify="SectionCallbackSubmitBtn"
           >
             отправить
           </ButtonCommon>

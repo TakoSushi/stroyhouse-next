@@ -1,0 +1,8 @@
+@import url("./page_styles.css");
+@import url("./components/Header/header_styles.css");
+@import url("./components/ButtonCommon/buttonCommon_styles.css");
+@import url("./components/SectionTitle/sectionTitle_styles.css");
+@import url("./components/SectionAboutCompany/sectionAboutCompany_styles.css");
+@import url("./components/SectionRules/sectionRules_styles.css");
+@import url("./components/SectionCallback/sectionCallback_styles.css");
+@import url("./components/SectionPortfolio/sectionPortfolio_styles.css");

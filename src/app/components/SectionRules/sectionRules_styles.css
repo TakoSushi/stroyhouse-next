@@ -1,0 +1,14 @@
+.sectionRules>h3 {
+  width: 100%;
+  text-align: left;
+  color: var(--Brand-Secondary, #746C7B);
+}
+
+@media screen and (min-width: 768px) {
+  .sectionRules>h3 {
+    position: absolute;
+    top: 35px;
+    left: 18%;
+    text-align: center;
+  }
+}

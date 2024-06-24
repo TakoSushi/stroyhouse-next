@@ -1,0 +1,49 @@
+.sectionPortfolio {
+  box-shadow: 0px 0px 40px 0px var(--box-shadow);
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.portfolioImg {
+  width: 100%;
+  height: 220px;
+  background-image: url("../../../../public/images/portfolio1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.sectionPortfolioText {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionPortfolioList {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 768px) {
+  .sectionPortfolio {
+    flex-direction: row-reverse;
+  }
+
+  .portfolioImg {
+    width: 608px;
+    height: 440px;
+  }
+
+  .sectionPortfolioText {
+    max-width: 497px;
+  }
+
+  .sectionPortfolioBtn {
+    width: 161px;
+  }
+}

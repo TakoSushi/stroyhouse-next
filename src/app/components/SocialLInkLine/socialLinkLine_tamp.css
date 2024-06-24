@@ -1,0 +1,12 @@
+.socialLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socialLinks>li {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+}

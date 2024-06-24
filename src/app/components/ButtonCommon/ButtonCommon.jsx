@@ -1,8 +1,8 @@
-import styles from "./styles/index.module.css";
+import "./buttonCommon_tamp.css";
 
 export function ButtonCommon({ children, type = "button", classSpecify = "", size = "medium" }) {
 
-  const sizeStile = size === "large" ? styles.commonBtnSizeLarge : styles.commonBtnSizeMedium;
+  const sizeStile = size === "large" ? "commonBtnSizeLarge" : "commonBtnSizeMedium";
 
-  return <button type={type} className={`${styles.commonBtn} ${sizeStile} ${classSpecify}`}>{children}</button>;
+  return <button type={type} className={`commonBtn ${sizeStile} ${classSpecify}`}>{children}</button>;
 }
