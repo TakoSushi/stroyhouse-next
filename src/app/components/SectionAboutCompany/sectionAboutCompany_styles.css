@@ -1,4 +1,5 @@
 .sectionAboutCompanyPreTitle {
+  color: var(--brand-secondary, #746C7B);
   font-family: "Gotham Pro";
   font-size: 12px;
   font-style: normal;
@@ -6,14 +7,16 @@
   line-height: 20px;
   letter-spacing: 0.24px;
   text-transform: uppercase;
-  padding-block-end: 8px;
-}
-
-.sectionAboutCompanyTitle {
-  padding-block-end: 20px;
 }
 
 .sectionAboutCompanyText {
   font-style: italic;
-  padding-block-end: 24px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .sectionAboutCompanyTitle {
+    font-size: 34px;
+    line-height: 118%;
+  }
 }

@@ -1,9 +1,23 @@
 .sectionVideo {
   width: 100%;
   font-size: 0;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .sectionVideoPlayerWrapper {
-  width: 100%;
   background-color: blueviolet;
+}
+
+.sectionVideoPlayerContent {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 375 / 248;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionVideoPlayerContent {
+    aspect-ratio: 1440 / 740;
+  }
 }

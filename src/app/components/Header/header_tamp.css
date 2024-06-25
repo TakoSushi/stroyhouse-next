@@ -19,10 +19,10 @@
   display: block;
   width: 115.2px;
   height: 36px;
-  margin-inline-start: 16px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-inline-start: 16px;
 }
 
 .headerNav {
@@ -30,15 +30,17 @@
 }
 
 .headerNavList {
-  display: flex;
+  max-height: 100px;
+  display: flex;  
   flex-direction: row;
   justify-content: space-between;
-  max-height: 100px;
+  gap: 8px;
   list-style: none;
 }
 
 .headerBtnsBlock {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
@@ -79,6 +81,7 @@
   .headerLogo {
     width: 160px;
     height: 50px;
+    margin-inline-start: 0;
   }
 
   .headerBtnsBlock {

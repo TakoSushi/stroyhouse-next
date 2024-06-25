@@ -6,8 +6,17 @@
 
 @media screen and (min-width: 768px) {
   .sectionRules>h3 {
+    max-width: 280px;
     position: absolute;
-    top: 35px;
+    top: 33px;
+    left: 55%;
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sectionRules>h3 {
+    max-width: 100%;
     left: 18%;
     text-align: center;
   }

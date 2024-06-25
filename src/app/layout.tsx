@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "react-phone-input-2/lib/style.css";
 import "./styles.css";
 
 export const metadata: Metadata = {

@@ -9,7 +9,10 @@ import pinterestIcon from "../../../../public/icons/iconPinterest.svg";
 
 import "./socialLinkLine_tamp.css";
 
-export function SocialLinkLine(classUl?: string) {
+interface ISocialLinkLineProps {
+  classUl?: string;
+}
+export function SocialLinkLine({classUl = ""}: ISocialLinkLineProps) {
   return (
     <ul className={`socialLinks ${classUl}`}>
       <li>
@@ -68,6 +71,5 @@ export function SocialLinkLine(classUl?: string) {
         </a>
       </li>
     </ul>
-
   );
 }

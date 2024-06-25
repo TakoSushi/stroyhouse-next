@@ -14,28 +14,27 @@
   background-size: cover;
 }
 
+
+.sectionTitleText {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .sectionTitle {
     height: 820px;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: flex-end;
-    /* gap: 12px; */
-    padding: 64px;
+    padding: 40px 64px;
   }
 
-  .sectionTitle h1 {
+  .sectionTitleText {
     align-self: flex-end;
-    max-width: 100%;
   }
-
+  
   .sectionTitleBtnSize {
     width: 230px;
   }
 }
-/* 
-@media screen and (min-width: 1024px) {
-  .sectionTitle {
-    gap: 0;
-  }
-} */

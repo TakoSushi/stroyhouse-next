@@ -7,7 +7,6 @@
 }
 
 .headerNavList {
-  gap: 40px;
   color: var(--brand-secondary, #746C7B);
   font-family: "Gotham Pro";
   font-size: 12px;

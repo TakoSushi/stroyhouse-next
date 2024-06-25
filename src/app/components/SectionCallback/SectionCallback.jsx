@@ -1,11 +1,10 @@
 "use client";
 import ru from "react-phone-input-2/lang/ru.json";
 import PhoneInput from "react-phone-input-2";
-import "react-phone-input-2/lib/style.css";
 import { ButtonCommon } from "../ButtonCommon/ButtonCommon";
+import { SocialLinkLine } from "../SocialLInkLine/SocialLinkLine";
 
 import "./sectionCallback_tamp.css";
-import { SocialLinkLine } from "../SocialLInkLine/SocialLinkLine";
 
 export function SectionCallback() {
   return (
@@ -13,7 +12,7 @@ export function SectionCallback() {
       <section className="sectionCallback">
         <div className="sectionCallbackTitleBlock">
           <div>
-            <h3 className="sectionCallbackTextColor">
+            <h3 className="sectionCallbackTextColor sectionCallbackTextTitle">
               Назначьте встречу
             </h3>
             <p className="sectionCallbackTextColor">
@@ -21,7 +20,7 @@ export function SectionCallback() {
               предстоящему обсуждению.
             </p>
           </div>
-         <SocialLinkLine />
+         <SocialLinkLine classUl="sectionCallbackSocialLinks" />
         </div>
         <form className="sectionCallbackForm" id="callbackForm">
           <fieldset className="sectionCallbackFieldset">
@@ -55,10 +54,10 @@ export function SectionCallback() {
                   id: "callbackForm_phone",
                   autoComplete: "on",
                 }}
-                containerClass="PhoneInputContainer"
-                inputClass="PhoneInputInput"
-                buttonClass="PhoneInputBtn"
-                dropdownClass="PhoneInputDropDown"
+                containerClass="phoneInputContainer"
+                inputClass="phoneInputInput"
+                buttonClass="phoneInputBtn"
+                dropdownClass="phoneInputDropDown"
               />
             </div>
           </fieldset>

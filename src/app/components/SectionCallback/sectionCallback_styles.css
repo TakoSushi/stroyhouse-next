@@ -7,21 +7,19 @@
   max-width: 500px;
 }
 
-.sectionCallbackTitleBlock h3 {
-  margin-bottom: 10px;
-  line-height: 28px;
+
+.sectionCallbackTextTitle {
+  color: var(--gray-50, #FFF);
+  font-family: "Gotham Pro";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  text-transform: uppercase;
 }
 
 .sectionCallbackTextColor {
-  color: var(--gray-50, #fff);
-}
-
-.sectionCallbackForm {
-  gap: 20px;
-}
-
-.sectionCallbackForm fieldset {
-  gap: 16px;
+  color: var(--gray-50, #a12929);
 }
 
 .sectionCallbackLabel {
@@ -40,47 +38,21 @@
 }
 
 .sectionCallbackInputName {
-  width: 100%;
-  height: 56px;
-  display: flex;
-  padding: 0 24px;
-  align-items: center;
-  gap: 8px;
-  border-radius: 40px;
+
   border: 1px solid var(--gray-150, #EAEAEA);
   background: var(--gray-50, #FFF);
-
   color: var(---brand-secondary, #746C7B);
   font-family: var(--global-text-font, "PT Sans");
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-}
-
-.sectionCallbackInputPhone {
-  display: flex;
-  flex-direction: row;
 }
 
 /* Phone Input */
-.PhoneInputContainer {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 8px;
-}
-
-.PhoneInputContainer>.PhoneInputInput {
-  width: 100%;
-  display: flex;
-  height: 56px;
-  padding: 16px 24px;
-  align-items: center;
-  gap: 8px;
-  border-radius: 40px !important;
-  border: 1px solid var(--gray-150, #EAEAEA);
+.phoneInputContainer>.phoneInputInput {
+   border: 1px solid var(--gray-150, #EAEAEA);
   background: var(--gray-50, #FFF);
-
   color: var(---brand-secondary, #746C7B);
   font-family: var(--global-text-font, "PT Sans");
   font-size: 16px;
@@ -89,20 +61,12 @@
   line-height: 24px;
 }
 
-.PhoneInputContainer>.PhoneInputBtn {
-  position: relative;
-  display: flex;
-  width: 120px;
-  height: 56px;
-  padding: 16px 24px;
-  align-items: center;
-  gap: 4px;
-  border-radius: 40px !important;
+.phoneInputContainer>.phoneInputBtn {
   border: 1px solid var(--gray-150, #EAEAEA);
   background: var(--gray-50, #FFF) !important;
 }
 
-.PhoneInputBtn>.PhoneInputDropDown {
+.phoneInputBtn>.phoneInputDropDown {
   border-radius: 16px;
   top: 30px;
 }

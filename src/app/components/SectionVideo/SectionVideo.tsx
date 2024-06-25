@@ -6,7 +6,8 @@ import Image from 'next/image'
 export function SectionVideo() {
   return <section className="sectionVideo">
     <div className="sectionVideoPlayerWrapper">
-      <Image src={videoTamplate} alt='Видео' />
+      <Image src={videoTamplate} alt='Видео'
+        className="sectionVideoPlayerContent" />
       {/* <YouTubeEmbed
         videoid="7PwMXIA4_RE"
         playlabel="Смотреть видео"

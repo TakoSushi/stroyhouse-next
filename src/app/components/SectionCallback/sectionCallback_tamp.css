@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 20px;
 }
 
 .sectionCallbackForm fieldset {
@@ -27,6 +28,7 @@
   flex-direction: column;
   border: none;
   padding: 0 0 16px;
+  gap: 16px;
 }
 
 .sectionCallbackLabel {
@@ -41,15 +43,6 @@
   align-items: center;
   gap: 8px;
   border-radius: 40px;
-  border: 1px solid var(--gray-150, #EAEAEA);
-  background: var(--gray-50, #FFF);
-
-  color: var(---brand-secondary, #746C7B);
-  font-family: var(--global-text-font, "PT Sans");
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
 }
 
 .sectionCallbackInputPhone {
@@ -58,13 +51,13 @@
 }
 
 /* Phone Input */
-.PhoneInputContainer {
+.phoneInputContainer {
   display: flex;
   flex-direction: row-reverse;
   gap: 8px;
 }
 
-.PhoneInputContainer>.PhoneInputInput {
+.phoneInputContainer>.phoneInputInput {
   width: 100%;
   display: flex;
   height: 56px;
@@ -72,18 +65,9 @@
   align-items: center;
   gap: 8px;
   border-radius: 40px !important;
-  border: 1px solid var(--gray-150, #EAEAEA);
-  background: var(--gray-50, #FFF);
-
-  color: var(---brand-secondary, #746C7B);
-  font-family: var(--global-text-font, "PT Sans");
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
 }
 
-.PhoneInputContainer>.PhoneInputBtn {
+.phoneInputContainer>.phoneInputBtn {
   position: relative;
   display: flex;
   width: 120px;
@@ -92,11 +76,9 @@
   align-items: center;
   gap: 4px;
   border-radius: 40px !important;
-  border: 1px solid var(--gray-150, #EAEAEA);
-  background: var(--gray-50, #FFF) !important;
 }
 
-.PhoneInputBtn>.PhoneInputDropDown {
+.phoneInputBtn>.phoneInputDropDown {
   border-radius: 16px;
   top: 30px;
 }
@@ -119,6 +101,9 @@
   }
 }
 
+.sectionCallbackSocialLinks {
+  gap: 8px;
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -128,7 +113,6 @@
 
   .sectionCallbackForm {
     flex-direction: row;
-    align-items: flex-end;
     justify-content: space-between;
     gap: 32px;
   }
@@ -145,5 +129,6 @@
 
   .SectionCallbackSubmitBtn {
     width: 177px;
+    margin-block-start: 2px;
   }
 }

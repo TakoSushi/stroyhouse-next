@@ -2,7 +2,7 @@
   background-image: url('../../../../public/images/welcomeHouse.jpg');
 }
 
-.sectionTitle h1 {
+.sectionTitleText {
   align-self: flex-start;
   max-width: 500px;
 }

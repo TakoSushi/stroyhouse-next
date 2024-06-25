@@ -11,7 +11,7 @@ export function SectionPortfolio() {
         <Image src={portfolioImg} alt="Портфолио" className="portfolioImg" />
       </div>
       <div className="sectionPortfolioText">
-        <h3>Профессиональный подход</h3>
+        <h3 className="sectionPortfolioTitle">Профессиональный подход</h3>
         <ul className="sectionPortfolioList">
           <li>Полный цикл производства</li>
           <li>Гарантия на все виды работ</li>
