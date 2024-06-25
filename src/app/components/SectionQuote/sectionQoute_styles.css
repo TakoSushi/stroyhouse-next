@@ -1,0 +1,24 @@
+.sectionQuote {
+  background-color: var(--gray-600);
+}
+
+.quoteText {
+  color: var(--gray-50, #fff);
+  font-size: 16px;
+  font-family: var(--global-text-font);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+.ownerImgFigcaption {
+  color: var(--grey-50, #fff);
+  font-family: var(--global-text-font, sans-serif);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-inline-start: 16px;
+  margin-block-start: 2px;
+}

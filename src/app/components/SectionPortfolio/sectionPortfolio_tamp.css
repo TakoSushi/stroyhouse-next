@@ -9,12 +9,17 @@
   padding: 20px;
 }
 
+.portfolioImgWrapper {
+  width: 100%;
+  height: fit-content;
+  font-size: 0;
+}
+
 .portfolioImg {
   width: 100%;
   height: 220px;
-  background-image: url("../../../../public/images/portfolio1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
   border-radius: 16px;
 }
 

@@ -1,0 +1,49 @@
+.sectionMapTitle {
+  margin-bottom: 20px;
+}
+
+.sectionMapTabList {
+  background: var(--grey-150, #EAEAEA);
+}
+
+.sectionMapTabTrigger {
+  background: var(--grey-150, #EAEAEA);
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+
+.sectionMapTabTrigger:hover {
+  background-color: var(--gray-600-opacity-10, rgba(85, 85, 85, 0.1));
+}
+
+.sectionMapTabTrigger[data-state='active'] {
+  background-color: var(--gray-600, #555);
+  color: var(--gray-50, #FFF);
+}
+
+.sectionMapAdressTime {
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.sectionMapAdressTime:first-child {
+  margin-block-end: 8px;
+}
+
+.sectionMapDescript {
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionMapTitle {
+    margin-bottom: 72px;
+  }
+}

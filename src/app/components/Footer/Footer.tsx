@@ -1,16 +1,15 @@
 import { AddCompSvg } from "./AddCompSvg";
 import { SegezaSvg } from "./SegezaSvg";
-import styles from "./styles/index.module.css";
-
+import "./footer_tamp.css";
 export function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.footerTopWrapper}>
+    <footer className="footer">
+      <div className="footerTopWrapper">
         <div>
-          <h3 className={styles.footerTitle}>
+          <h3 className="footerTitle">
             Дома премиум-класса по индивидуальным проектам
           </h3>
-          <ul className={styles.footerLinkList}>
+          <ul className="footerLinkList">
             <li>
               <a
                 className="linkCommon"
@@ -68,10 +67,10 @@ export function Footer() {
             </li>
           </ul>
         </div>
-        <div className={styles.footerNav}>
+        <div className="footerNav">
           <h4>компания</h4>
           <nav>
-            <ul className={styles.footerNavList}>
+            <ul className="footerNavList">
               <li>
                 <a className="linkCommon" href="#" title="О компании">
                   О компании
@@ -90,10 +89,10 @@ export function Footer() {
             </ul>
           </nav>
         </div>
-        <div className={styles.footerNav}>
-          <h4>проекты</h4>
+        <div className="footerNav">
+          <h4 className="footerNavProjectsTitle">проекты</h4>
           <nav>
-            <ul className={`${styles.footerNavList} ${styles.footerNavListProject}`}>
+            <ul className="footerNavList footerNavListProject">
               <li>
                 <a className="linkCommon" href="#" title="Усадьбы и комплексы">
                   Усадьбы и комплексы
@@ -117,20 +116,20 @@ export function Footer() {
             </ul>
           </nav>
         </div>
-        <div className={styles.footerContacts}>
+        <div className="footerContacts">
           <h4>контакты</h4>
-          <div className={styles.footerContactsBlock}>
+          <div className="footerContactsBlock">
             <div>
-              <p className={styles.footerText}>E-mail:</p>
-              <p className={styles.footerText}>info@s-h.ru</p>
+              <p className="footerText">E-mail:</p>
+              <p className="footerText">info@s-h.ru</p>
             </div>
             <div>
-              <p className={styles.footerText}>Тел.</p>
-              <p className={styles.footerText}>+7(495)645-44-30</p>
+              <p className="footerText">Тел.:</p>
+              <p className="footerText">+7 (495) 645-44-30</p>
             </div>
             <div>
-              <p className={styles.footerText}>Адресс:</p>
-              <p className={styles.footerText}>
+              <p className="footerText">Адрес:</p>
+              <p className="footerText">
                 Московская область, Истринский район, Веледниково, улица
                 Живописная, дом 25
               </p>
@@ -138,32 +137,32 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className={styles.footerBottomWrapper}>
+      <div className="footerBottomWrapper">
         <div>
-          <span className={styles.footerStroyhouseLogo}></span>
+          <span className="footerStroyhouseLogo"></span>
         </div>
 
         <div>
-          <p className={styles.footerText}>
+          <p className="footerText">
             &copy; 2024 ООО &laquo;Строй Хауз&raquo;
           </p>
-          <p className={styles.footerText}>Политика конфиденциальности</p>
+          <p className="footerText">Политика конфиденциальности</p>
         </div>
 
         <div>
-          <span className={styles.segezhaLogo}>
-          <SegezaSvg />
+          <span className="segezhaLogo">
+            <SegezaSvg />
           </span>
-          <p className={styles.footerText}>
+          <p className="footerText">
             Дилер и стратегический партнер SEGEZHA GROUP. Один из крупнейших
             поставщиков российских лесопромышленных холдингов
           </p>
         </div>
         <div>
-          <span className={styles.associationLogo}>
+          <span className="associationLogo">
             <AddCompSvg />
           </span>
-          <p className={styles.footerText}>
+          <p className="footerText">
             Компания STROYHOUSE входит в Ассоциацию Деревянного домостроения
           </p>
         </div>

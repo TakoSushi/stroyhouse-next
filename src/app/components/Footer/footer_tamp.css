@@ -4,9 +4,8 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  background-color: var(--gray-600, #555);
   border-radius: 16px 16px 0 0;
-  padding: 16px;
+  padding: 20px 16px;
 }
 
 .footerText {
@@ -25,7 +24,6 @@
 }
 
 .footerTitle {
-  color: var(--gray-50, #fff);
   padding-bottom: 20px;
 }
 
@@ -36,19 +34,16 @@
   max-height: 100px;
   flex-wrap: wrap;
   list-style: none;
-  color: var(--gray-50, #fff);
-  font-family: "Gotham Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  /* 125% */
 }
 
 .footerNav {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.footerNavProjectsTitle {
+  margin-block-end: 14px;
 }
 
 .footerNavList {
@@ -59,16 +54,10 @@
   max-height: 100px;
   flex-wrap: wrap;
   list-style: none;
-  color: var(--gray-50, #fff);
-  font-family: "PT Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 150% */
 }
 
 .footerNavListProject {
+  max-width: 307px;
   flex-direction: column;
 }
 
@@ -79,14 +68,15 @@
 }
 
 .footerContactsBlock {
+  max-width: 313px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 10px;
 }
 
 .footerBottomWrapper {
   width: 100%;
-  border-top: var(--gray-50, #fff) 1px solid;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -106,8 +96,6 @@
   display: block;
   width: 213px;
   height: 67px;
-  background: var(--gray-50, #fff);
-  background: url("../../../../../public/companyLogo/LogoStroyhouse_brus_white.svg") no-repeat center;
   background-size: contain;
 }
 

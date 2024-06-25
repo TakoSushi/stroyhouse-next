@@ -6,3 +6,9 @@
 @import url("./components/SectionRules/sectionRules_styles.css");
 @import url("./components/SectionCallback/sectionCallback_styles.css");
 @import url("./components/SectionPortfolio/sectionPortfolio_styles.css");
+@import url("./components/SectionQuote/sectionQoute_styles.css");
+@import url("./components/SectionContragents/sectionContragents_styles.css");
+@import url("./components/SectionMap/sectionMap_styles.css");
+@import url("./components/Footer/footer_styles.css");
+@import url("./components/RuleCard/ruleCard_styles.css");
+@import url("./components/SliderSyncing/sliderSyncing_styles.css");

@@ -1,11 +1,15 @@
 import { ButtonCommon } from "../ButtonCommon/ButtonCommon";
+import portfolioImg from "../../../../public/images/portfolio1.jpg";
 import "./sectionPortfolio_tamp.css";
+import Image from "next/image";
 
 export function SectionPortfolio() {
   return (
     <div className="sectionWrapper">
     <section className="sectionPortfolio">
-      <div className="portfolioImg"></div>
+      <div className="portfolioImgWrapper">
+        <Image src={portfolioImg} alt="Портфолио" className="portfolioImg" />
+      </div>
       <div className="sectionPortfolioText">
         <h3>Профессиональный подход</h3>
         <ul className="sectionPortfolioList">

@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import { memo, useEffect, useRef, useState } from "react";
 import type { FC } from "react";
 import Slider from "react-slick";
@@ -6,9 +7,7 @@ import type { TSliderSyncingProps } from ".";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import styles from "./styles/index.module.css";
-import Image from "next/image";
+import "./sliderSyncing_tamp.css";
 
 const SliderSyncingComponent: FC<TSliderSyncingProps> = (props: TSliderSyncingProps) => {
   const { images, alt = '', arrowsFor, arrowsNav, responsiveNav, stylesSliderNav, stylesSliderFor } = props;
@@ -35,7 +34,7 @@ const SliderSyncingComponent: FC<TSliderSyncingProps> = (props: TSliderSyncingPr
         {images && images.map((image, index) => {
           return (
             <div key={index + "Slider1"}>
-              <Image src={image} alt={alt} className={styles.innerImgFor} />
+              <Image src={image} alt={alt} className="innerImgFor" />
             </div>
           );
         })}
@@ -53,7 +52,7 @@ const SliderSyncingComponent: FC<TSliderSyncingProps> = (props: TSliderSyncingPr
         {images && images.map((image, index) => {
           return (
             <div key={index + "Slider2"}>
-              <Image src={image} alt={alt} className={styles.innerImgNav} />
+              <Image src={image} alt={alt} className="innerImgNav" />
             </div>
           );
         })}

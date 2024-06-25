@@ -1,31 +1,31 @@
+import Image from "next/image";
 import owner from "../../../../public/images/owner.jpg";
 import signature from "../../../../public/images/signatureOwnerFigma.png"
-import styles from "./styles/index.module.css";
-import Image from "next/image";
+import "./sectionQoute_tamp.css";
 
 export function SectionQuote() {
   return (
     <div className="sectionWrapper">
-      <section className={styles.sectionQuote}>
-        <blockquote className={styles.blockquote}>
-          <p className={styles.quoteText}>
+      <section className="sectionQuote">
+        <blockquote className="blockquote">
+          <p className="quoteText">
             Контакт с заказчиком длится долгие годы. И всегда когда нужна помощь
             наши менеджеры на связи и мы всегда откликнемся и поможем. Заказчики
             нас просто рекомендуют
           </p>
           <Image
-            className={styles.ownerSignature}
+            className="ownerSignature"
             src={signature}
             alt="Подпись Эдуарда Меньшикова"
           />
         </blockquote>
-        <figure className={styles.ownerImgContainer}>
+        <figure className="ownerImgContainer">
           <Image
-            className={styles.ownerImg}
+            className="ownerImg"
             src={owner}
             alt="Протрет Эдуарда Меньшикова"
           />
-          <figcaption className={styles.ownerImgFigcaption}>
+          <figcaption className="ownerImgFigcaption">
             Эдуард Меньшиков
           </figcaption>
         </figure>
