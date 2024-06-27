@@ -13,6 +13,12 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.sectionCallbackTextTitle {
+  margin-block-end: 10px;
 }
 
 .sectionCallbackForm {
@@ -96,8 +102,8 @@
     justify-content: space-between;
   }
 
-  .sectionCallbackTitleBlock h3 {
-    margin-bottom: 8px;
+  .sectionCallbackTextTitle {
+    margin-block-end: 8px;
   }
 }
 
@@ -109,6 +115,13 @@
 @media screen and (min-width: 1024px) {
   .sectionCallback {
     gap: 72px;
+  }
+  
+  .sectionCallbackTitleBlock {
+    max-width: none;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
   }
 
   .sectionCallbackForm {

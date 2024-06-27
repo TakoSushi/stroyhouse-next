@@ -17,6 +17,7 @@
 
 .headerLogo {
   display: block;
+  min-width: 160px;
   width: 115.2px;
   height: 36px;
   background-position: center;
@@ -25,51 +26,15 @@
   margin-inline-start: 16px;
 }
 
-.headerNav {
-  display: none;
-}
-
-.headerNavList {
-  max-height: 100px;
-  display: flex;  
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 8px;
-  list-style: none;
-}
-
 .headerBtnsBlock {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.headerRoundBtn {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  border: none;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.headerRoundBtn:hover {
-  border: 1px solid var(--Brand-Secondary, #746C7B);
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-  transition-duration: .25s;
-}
-
-.headerRoundBtn:active {
-  opacity: 0.8;
-}
-
-.headerBtn {
+.headerQuestionBtn {
   display: none;
 }
-
 
 @media screen and (min-width: 768px) {
   .header {
@@ -89,28 +54,26 @@
     gap: 20px;
   }
 
-  .headerBtn {
+  .headerQuestionBtn {
     display: block;
     width: 210px;
   }
-  
+
   .headerRoundBtnMenu {
     order: 1;
   }
-
 }
-@media screen and (min-width: 1148px) {
 
-  .headerNav {
-    display: block;
+@media screen and (min-width: 992px) {
+  .headerBtnsBlock {
+    width: 100%;
+    gap: 16px;
+    flex-direction: row-reverse;
   }
+}
 
+@media screen and (min-width: 1200px) {
   .headerBtnsBlock {
     gap: 32px;
   }
-
-  .headerRoundBtnMenu {
-    display: none;
-  }
-
 }

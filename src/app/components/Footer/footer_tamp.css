@@ -140,6 +140,7 @@
 
   .footerLinkList {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .footerNav {
@@ -199,4 +200,9 @@
   .footerTopWrapper>div:first-child {
     grid-column: 1 / span 2;
   }
+
+  .footerContactsBlockTelMargin {
+    margin-block-start: -8px;
+  }
+  
 }

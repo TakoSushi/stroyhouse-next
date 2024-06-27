@@ -16,6 +16,10 @@
   padding-block-start: 20px;
 }
 
+.sectionMapTextMargin{
+  margin: 0 0 20px 0;
+}
+
 .sectionMapTabList {
   width: 304px;
   height: 48px;
@@ -57,16 +61,21 @@
 @media screen and (min-width: 768px) {
   .sectionMap {
     flex-direction: row;
-    gap: 126px;
+    align-items: center;
     padding: 40px;
   }
 
+  .sectionMapTextMargin{
+    margin: 0 126px 0 0;
+  }
+  
   .sectionMapAdressBlock {
     gap: 40px;
-    padding-block-start: 20px;
+    padding-block-start: 0;
   }
-
+  
   .sectionMapTabList {
+    margin-block-end: 40px;
     width: 387px;
   }
 

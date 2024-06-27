@@ -7,7 +7,7 @@ export function SectionQuote() {
   return (
     <div className="sectionWrapper">
       <section className="sectionQuote">
-        <blockquote className="blockquote">
+        <blockquote className="sectionWrapperBlockquote">
           <p className="quoteText">
             Контакт с заказчиком длится долгие годы. И всегда когда нужна помощь
             наши менеджеры на связи и мы всегда откликнемся и поможем. Заказчики

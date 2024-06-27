@@ -2,11 +2,20 @@
   background-color: var(--gray-100);
 }
 
-.sectionContragents>h3 {
-  color: var(--Brand-Secondary, #746C7B);
+.sectionContragentsTitle {
+  color: var(--brand-secondary, #746C7B);
+  line-height: 28px;
+  align-self: left;
 }
 
 .sectionContragentsBrandLogo {
   box-shadow: 0px 0px 20px 0px var(--box-shadow);
   filter: grayscale(100%);
+}
+
+@media screen and (min-width: 768px) {
+  .sectionContragentsTitle {
+    line-height: 40px;
+    align-self: center;
+  }
 }

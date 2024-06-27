@@ -1,8 +1,8 @@
 .sectionContragents {
+  max-width: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
 }
 
 .sectionContragentsGrid {
@@ -36,8 +36,23 @@
 }
 
 @media screen and (min-width: 768px) {
+  .sectionContragents {
+    max-width: 90%;
+    margin-block-end: -16px;
+  }
+
   .sectionContragentsBrandLogo {
     width: 176px;
     height: 88px;
   }
+
+  .sectionContragentsTitle {
+    margin-block-end: 56px;
+  }  
+
+  .marquee {
+    height: 120px;
+    overflow: hidden;
+  }
+  
 }

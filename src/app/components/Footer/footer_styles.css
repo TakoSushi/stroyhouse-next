@@ -8,6 +8,12 @@
 
 .footerTitle {
   color: var(--gray-50, #fff);
+  font-family: "Gotham Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .footerLinkList {
@@ -35,4 +41,11 @@
 .footerStroyhouseLogo {
   background: var(--gray-50, #fff);
   background: url("../../../../public/companyLogo/LogoStroyhouse_brus_white.svg") 
+}
+
+@media screen and (min-width: 768px) {
+  .footerTitle {
+    font-size: 34px;
+    line-height: 40px;
+  }
 }

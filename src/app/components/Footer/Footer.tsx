@@ -123,7 +123,7 @@ export function Footer() {
               <p className="footerText">E-mail:</p>
               <p className="footerText">info@s-h.ru</p>
             </div>
-            <div>
+            <div className="footerContactsBlockTelMargin">
               <p className="footerText">Тел.:</p>
               <p className="footerText">+7 (495) 645-44-30</p>
             </div>

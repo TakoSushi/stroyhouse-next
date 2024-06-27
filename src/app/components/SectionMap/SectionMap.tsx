@@ -26,7 +26,7 @@ export function SectionMap() {
     <>
       <div className="sectionWrapper">
         <section className="sectionMap">
-          <div>
+          <div className='sectionMapTextMargin'>
             <h3 className="sectionMapTitle">Наши офисы</h3>
             <Tabs.Root
               value={activeTab}

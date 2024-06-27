@@ -1,5 +1,7 @@
+/* @import url("../../node_modules/bootstrap/dist/css/bootstrap.min.css"); */
 @import url("./page_styles.css");
 @import url("./components/Header/header_styles.css");
+@import url("./components//MenuOffCanvas/menuOffCanvas_styles.css");
 @import url("./components/ButtonCommon/buttonCommon_styles.css");
 @import url("./components/SectionTitle/sectionTitle_styles.css");
 @import url("./components/SectionAboutCompany/sectionAboutCompany_styles.css");

@@ -71,7 +71,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
+*, ul, li, a, button, p, h1, h2, h3, h4, h5, h6, blockquote, figure {
   box-sizing: border-box;
   padding: 0;
   margin: 0;

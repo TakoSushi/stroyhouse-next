@@ -5,18 +5,3 @@
 .headerLogo {
   background-image: url("../../../../public/companyLogo/LogoStroyhouse_brus.svg");
 }
-
-.headerNavList {
-  color: var(--brand-secondary, #746C7B);
-  font-family: "Gotham Pro";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0.24px;
-  text-transform: uppercase;
-}
-
-.headerRoundBtn {
-  background: var(--grey-50, #FFF);
-}
