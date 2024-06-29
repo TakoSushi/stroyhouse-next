@@ -8,6 +8,17 @@
   text-transform: uppercase;
 }
 
+.headerNavMenuSocialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color:var(--gray-600, #555);
+}
+
 @media screen and (min-width: 992px) {
   .headerNavMenuList {
     color: var(--brand-secondary, #746C7B);
@@ -18,5 +29,7 @@
     line-height: 20px;
     letter-spacing: 0.24px;
     text-transform: uppercase;
-  }  
+  } 
+
+
 }

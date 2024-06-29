@@ -1,4 +1,3 @@
-/* @import url("../../node_modules/bootstrap/dist/css/bootstrap.min.css"); */
 @import url("./page_styles.css");
 @import url("./components/Header/header_styles.css");
 @import url("./components//MenuOffCanvas/menuOffCanvas_styles.css");
@@ -13,4 +12,3 @@
 @import url("./components/SectionMap/sectionMap_styles.css");
 @import url("./components/Footer/footer_styles.css");
 @import url("./components/RuleCard/ruleCard_styles.css");
-@import url("./components/SliderSyncing/sliderSyncing_styles.css");

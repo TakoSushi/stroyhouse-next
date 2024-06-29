@@ -1,18 +1,11 @@
-import { useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { RoundBtn } from '../RoundBtn/RoundBtn';
+import { MenuDropDown } from '../MenuDropdown/MenuDropDown';
+import { ButtonCommon } from '../ButtonCommon/ButtonCommon';
+import { SocialLinkLine } from '../SocialLInkLine/SocialLinkLine';
+import { CloseIconSvg } from '@/app/ui/Icons/CloseIconSvg';
 
 import "./menuOffCanvas_tamp.css";
-
-const CloseIconSvg = () => {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="Icons/icon">
-        <path id="Vector" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="white" />
-      </g>
-    </svg>
-  )
-}
 
 interface IMenuOffCanvasProps {
   handleClose: () => void,
@@ -32,27 +25,29 @@ export function MenuOffCanvas({ handleClose, show }: IMenuOffCanvasProps) {
         <nav className="headerNavMenu">
           <ul className="headerNavMenuList">
             <li>
-              <a className="linkCommon headerNavMenuListLink" href="#" title="О компании">
-                проекты
-              </a>
+              <MenuDropDown />
             </li>
             <li>
-              <a className="linkCommon headerNavMenuListLink" href="#" title="Вакансии">
+              <a className="linkCommon headerNavMenuListLink" href="#" title="блог">
                 блог
               </a>
             </li>
             <li>
-              <a className="linkCommon headerNavMenuListLink" href="#" title="Реквизиты">
+              <a className="linkCommon headerNavMenuListLink" href="#" title="компания">
                 компания
               </a>
             </li>
             <li>
-              <a className="linkCommon headerNavMenuListLink" href="#" title="Реквизиты">
+              <a className="linkCommon headerNavMenuListLink" href="#" title="контакты">
                 контакты
               </a>
             </li>
           </ul>
         </nav>
+        <ButtonCommon classSpecify="headerNavMenuQuestionBtn d-lg-none">Задать вопрос</ButtonCommon>
+        <SocialLinkLine 
+        classUl='d-lg-none'
+        classA="headerNavMenuSocialLinks" />
       </Offcanvas.Body>
     </Offcanvas>
   );

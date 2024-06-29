@@ -1,0 +1,11 @@
+.headerNavMenuListLink.dropDownCustomToogle {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .dropdown-menu {
+    position: static;
+  }
+}

@@ -11,11 +11,14 @@ import "./swiper.css";
 import "./sectionRules_tamp.css";
 
 import { rules } from './rules';
+import dynamic from "next/dynamic";
 
 export function SectionRules() {
 
   const pagination = {
     clickable: true,
+    dynamicBullets: true,
+    dynamicMainBullets: 3,
     renderBullet: function (index: number, className: string) {
       return '<span class="' + className + '">' + (index + 1) + '</span>';
     },
@@ -26,7 +29,7 @@ export function SectionRules() {
       <section className="sectionRules">
         <h3>Правила &laquo;строй хауз&raquo;</h3>
         <div className="sectionRulesSwiperWrapper">
-          {/* <Swiper
+          <Swiper
             spaceBetween={50}
             slidesPerView={1}
             loop={true}
@@ -55,7 +58,7 @@ export function SectionRules() {
             <SwiperSlide className="mySwiperSlide">
               <RuleCard cardImg={rules[5].cardImg} cardTitle={rules[5].cardTitle} cardDescription={rules[5].cardDescription} />
             </SwiperSlide>
-          </Swiper> */}
+          </Swiper>
         </div>
       </section>
     </div>

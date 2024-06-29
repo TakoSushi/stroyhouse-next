@@ -1,73 +1,76 @@
-import Image from "next/image";
-
-
-import vkIcon from "../../../../public/icons/iconVk.svg";
-import telegrammIcon from "../../../../public/icons/iconTelegramm.svg";
-import ZenIcon from "../../../../public/icons/iconYandexZen.svg";
-import youtubeIcon from "../../../../public/icons/iconYoutube.svg";
-import pinterestIcon from "../../../../public/icons/iconPinterest.svg";
-
 import "./socialLinkLine_tamp.css";
 
 interface ISocialLinkLineProps {
   classUl?: string;
+  classA?: string;
 }
-export function SocialLinkLine({classUl = ""}: ISocialLinkLineProps) {
+
+export function SocialLinkLine({ classUl = "", classA = "" }: ISocialLinkLineProps) {
   return (
     <ul className={`socialLinks ${classUl}`}>
       <li>
         <a
-          className="linkCommon"
+          className={`linkCommon ${classA}`}
           href="https://www.youtube.com/channel/UCgkVDDQG-Ky0wQ8V16I_2zg"
           target="_blank"
           rel="nofollow"
           title="YouTube"
         >
-          <Image src={youtubeIcon} alt="YouTube" width={44} height={44} />
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2625 27.0568C10.8702 26.9408 10.5123 26.7343 10.219 26.4549C9.9256 26.1754 9.7054 25.8312 9.57695 25.4512C8.84292 23.4874 8.62543 15.2869 10.0391 13.6681C10.5096 13.1414 11.1739 12.8172 11.8878 12.7658C15.6802 12.3677 27.3975 12.4208 28.7432 12.8985C29.1217 13.0183 29.4675 13.2203 29.7547 13.4891C30.0419 13.758 30.263 14.0868 30.4015 14.451C31.2035 16.4812 31.2307 23.8589 30.2928 25.8095C30.044 26.3173 29.6275 26.7285 29.1102 26.9772C27.6965 27.6672 13.1383 27.6539 11.2625 27.0568ZM17.2842 23.2087L24.0808 19.7587L17.2842 16.2821V23.2087Z" fill="white" />
+          </svg>
         </a>
       </li>
       <li>
         <a
-          className="linkCommon"
+          className={`linkCommon ${classA}`}
           href="https://t.me/StroyiHouse"
           target="_blank"
           rel="nofollow"
           title="Телеграмм"
         >
-          <Image src={telegrammIcon} alt="Телеграмм" width={44} height={44} />
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z" fill="white" />
+          </svg>
         </a>
       </li>
       <li>
         <a
-          className="linkCommon"
+          className={`linkCommon ${classA}`}
           href="https://dzen.ru/stroyhouse"
           target="_blank"
           rel="nofollow"
           title="Дзен"
         >
-          <Image src={ZenIcon} alt="Дзен" width={44} height={44} />
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.9286 21.9286C20.3571 23.55 20.2429 25.5714 20.1071 30C24.2357 30 27.0857 29.9857 28.5571 28.5571C29.9857 27.0857 30 24.1 30 20.1071C25.5714 20.25 23.55 20.3571 21.9286 21.9286ZM10 20.1071C10 24.1 10.0143 27.0857 11.4429 28.5571C12.9143 29.9857 15.7643 30 19.8929 30C19.75 25.5714 19.6429 23.55 18.0714 21.9286C16.45 20.3571 14.4286 20.2429 10 20.1071ZM19.8929 10C15.7714 10 12.9143 10.0143 11.4429 11.4429C10.0143 12.9143 10 15.9 10 19.8929C14.4286 19.75 16.45 19.6429 18.0714 18.0714C19.6429 16.45 19.7571 14.4286 19.8929 10ZM21.9286 18.0714C20.3571 16.45 20.2429 14.4286 20.1071 10C24.2357 10 27.0857 10.0143 28.5571 11.4429C29.9857 12.9143 30 15.9 30 19.8929C25.5714 19.75 23.55 19.6429 21.9286 18.0714Z" fill="white" />
+          </svg>
         </a>
       </li>
       <li>
         <a
-          className="linkCommon"
+          className={`linkCommon ${classA}`}
           href="https://vk.com/stroyhous"
           target="_blank"
           rel="nofollow"
           title="Вконтакте"
         >
-          <Image src={vkIcon} alt="Вконтакте" width={44} height={44} />
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.9825 27C13.466 27 9.17864 21.7447 9 13H12.7651C12.8888 19.4184 15.6646 22.1371 17.8632 22.6977V13H21.4085V18.5355C23.5796 18.2973 25.8607 15.7748 26.6302 13H30.1755C29.8855 14.4391 29.3075 15.8017 28.4776 17.0025C27.6477 18.2033 26.5837 19.2166 25.3523 19.979C26.7269 20.6756 27.941 21.6615 28.9145 22.8717C29.888 24.082 30.5988 25.489 31 27H27.0974C26.7373 25.6876 26.0054 24.5128 24.9934 23.6228C23.9814 22.7328 22.7343 22.1673 21.4085 21.997V27H20.9825Z" fill="white" />
+          </svg>
         </a>
       </li>
       <li>
         <a
-          className="linkCommon"
+          className={`linkCommon ${classA}`}
           href="https://www.pinterest.ru/stroyhouse/"
           target="_blank"
           rel="nofollow"
           title="Pinterest"
         >
-          <Image src={pinterestIcon} alt="Pinterest" width={44} height={44} />
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 10C14.5 10 10 14.5 10 20C10 24.125 12.5 27.625 16 29.125C16 28.375 16 27.625 16.125 26.875C16.375 26 17.375 21.375 17.375 21.375C17.375 21.375 17 20.75 17 19.75C17 18.25 17.875 17.125 18.875 17.125C19.75 17.125 20.25 17.75 20.25 18.625C20.25 19.5 19.625 20.875 19.375 22.125C19.125 23.125 19.875 24 21 24C22.875 24 24.125 21.625 24.125 18.625C24.125 16.375 22.625 14.75 20 14.75C17 14.75 15.125 17 15.125 19.5C15.125 20.375 15.375 21 15.75 21.5C15.875 21.75 16 21.75 15.875 22C15.875 22.125 15.75 22.625 15.625 22.75C15.5 23 15.375 23.125 15.125 23C13.75 22.375 13.125 20.875 13.125 19.125C13.125 16.25 15.5 12.875 20.25 12.875C24.125 12.875 26.625 15.625 26.625 18.625C26.625 22.5 24.5 25.5 21.25 25.5C20.125 25.5 19.125 24.875 18.75 24.25C18.75 24.25 18.125 26.5 18 27C17.75 27.75 17.375 28.5 17 29.125C17.875 29.375 18.875 29.5 19.875 29.5C25.375 29.5 29.875 25 29.875 19.5C30 14.5 25.5 10 20 10Z" fill="white" />
+          </svg>
         </a>
       </li>
     </ul>

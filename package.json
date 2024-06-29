@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "@next/third-parties": "^14.2.4",
     "@radix-ui/react-tabs": "^1.0.4",
     "bootstrap": "^5.3.3",

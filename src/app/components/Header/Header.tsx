@@ -29,9 +29,7 @@ export function Header() {
       <a href="#" className="headerLogo"  target="_self"></a>
       <div className="headerBtnsBlock">
         <ButtonCommon classSpecify="headerQuestionBtn">Задать вопрос</ButtonCommon>
-        {/* <button type="button" className={`headerRoundBtn headerRoundBtnCall`}>
-          <CallIconSvg />
-        </button> */}
+
         <RoundBtn>
           <CallIconSvg />
         </RoundBtn>
@@ -40,9 +38,6 @@ export function Header() {
         </RoundBtn>
 
         <MenuOffCanvas handleClose={handleClose} show={show}/>
-        {/* <button type="button" className={`headerRoundBtn headerRoundBtnMenu`} onClick={handleShow}>
-          <MenuIconSvg />
-        </button> */}
       </div>
 
     </header>
