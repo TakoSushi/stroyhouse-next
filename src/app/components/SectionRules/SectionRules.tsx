@@ -1,66 +1,67 @@
 'use client'
-import { Swiper, SwiperSlide } from "swiper/react";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-import { Pagination } from 'swiper/modules';
+import { useEffect, useRef, useState } from "react";
+import { Swiper, SwiperRef, SwiperClass, SwiperSlide } from "swiper/react";
+import ResponsivePagination from 'react-responsive-pagination';
 import { RuleCard } from "../RuleCard/RuleCard";
+import { rules } from './rules';
 
+
+import 'react-responsive-pagination/themes/minimal.css';
+import 'swiper/css';
 import "./swiper.css";
 import "./sectionRules_tamp.css";
 
-import { rules } from './rules';
-import dynamic from "next/dynamic";
-
 export function SectionRules() {
+  const totalPages = rules.length;
+  const [currentPage, setCurrentPage] = useState(0);
 
-  const pagination = {
-    clickable: true,
-    dynamicBullets: true,
-    dynamicMainBullets: 3,
-    renderBullet: function (index: number, className: string) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
-    },
-  };
+  const [instance, setInstance] = useState<SwiperClass | null>(null);
+  const swiperElRef = useRef<SwiperRef>(null);
+
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page + 1);
+    instance?.slideTo(page);
+  }
 
   return (
     <div className="sectionWrapper">
       <section className="sectionRules">
-        <h3>Правила &laquo;строй хауз&raquo;</h3>
+        <h3 className="sectionRulesTitle">Правила &laquo;строй хауз&raquo;</h3>
         <div className="sectionRulesSwiperWrapper">
           <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
-            loop={true}
-            pagination={pagination}
-            modules={[Pagination]}
-            className="mySwiper"
+          ref={swiperElRef}
+          onSwiper={setInstance}
+          onActiveIndexChange={({ activeIndex, realIndex, clickedIndex }) => {
+            console.log("realIndex", realIndex);
+            console.log("activeIndex", activeIndex);
+            console.log("clickedIndex", clickedIndex);
+            setCurrentPage(realIndex)}
+          }
+          spaceBetween={50}
+          slidesPerView={1}
+          loop={true}
+          className="mySwiper"
           >
-            <SwiperSlide className="mySwiperSlide">
-              <RuleCard cardImg={rules[0].cardImg} cardTitle={rules[0].cardTitle} cardDescription={rules[0].cardDescription} />
-            </SwiperSlide>
-            <SwiperSlide className="mySwiperSlide">
-              <RuleCard cardImg={rules[1].cardImg} cardTitle={rules[1].cardTitle} cardDescription={rules[1].cardDescription} />
-            </SwiperSlide>
-            <SwiperSlide className="mySwiperSlide">
-              <RuleCard cardImg={rules[2].cardImg} cardTitle={rules[2].cardTitle} cardDescription={rules[2].cardDescription} />
-            </SwiperSlide>
-            <SwiperSlide className="mySwiperSlide">
-              <RuleCard cardImg={rules[3].cardImg} cardTitle={rules[3].cardTitle} cardDescription={rules[3].cardDescription} />
-            </SwiperSlide>
-            <SwiperSlide className="mySwiperSlide">
-              <RuleCard cardImg={rules[0].cardImg} cardTitle={rules[0].cardTitle} cardDescription={rules[0].cardDescription} />
-            </SwiperSlide>
-            <SwiperSlide className="mySwiperSlide">
-              <RuleCard cardImg={rules[4].cardImg} cardTitle={rules[4].cardTitle} cardDescription={rules[4].cardDescription} />
-            </SwiperSlide>
-            <SwiperSlide className="mySwiperSlide">
-              <RuleCard cardImg={rules[5].cardImg} cardTitle={rules[5].cardTitle} cardDescription={rules[5].cardDescription} />
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </section>
+          {
+            rules.map((rule, i) => {
+              return (
+                <SwiperSlide className="mySwiperSlide" key={i}>
+                  <RuleCard cardImg={rule.cardImg} cardTitle={rule.cardTitle} cardDescription={rule.cardDescription} />
+                </SwiperSlide>
+              )
+            })
+          }
+        </Swiper>
+        <ResponsivePagination
+          current={currentPage}
+          total={totalPages}
+          onPageChange={handlePageChange}
+        />
+
     </div>
+      </section >
+    </div >
   );
 }

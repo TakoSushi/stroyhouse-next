@@ -1,11 +1,11 @@
-.sectionRules>h3 {
+.sectionRulesTitle {
   width: 100%;
   text-align: left;
   color: var(--Brand-Secondary, #746C7B);
 }
 
 @media screen and (min-width: 768px) {
-  .sectionRules>h3 {
+  .sectionRulesTitle {
     max-width: 280px;
     position: absolute;
     top: 33px;
@@ -15,7 +15,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .sectionRules>h3 {
+  .sectionRulesTitle {
     max-width: 100%;
     left: 18%;
     text-align: center;
