@@ -17,6 +17,10 @@
   background: var(--gray-600, #555);
 }
 
+.headerNavMenuQuestionBtn {
+  margin-block-end: 40px;
+}
+
 @media screen and (min-width: 600px) {
   .offcanvas-lg.offcanvas-start {
     width: 375px;
@@ -50,10 +54,6 @@
       transition-property: background-color, box-shadow;
       background-color: var(--background-75-white, rgba(255, 255, 255, 0.75));
       box-shadow: 0px 0px 40px 0px var(--box-shadow, rgba(120, 120, 120, 0.15));
-    }
-
-    .headerNavMenuQuestionBtn {
-      margin-block-end: 40px;
     }
   }
 

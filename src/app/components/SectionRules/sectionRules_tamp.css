@@ -1,26 +1,48 @@
 .sectionRules {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  background-color: var(--gray-100);
-  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  background-color: var(--gray-100, #f9f9f9);
 }
 
-.sectionRulesSwiperWrapper {
+.sectionRulesTitle {
   width: 100%;
-  height: 683px;
+  margin-block-end: 20px;
 }
 
-@media screen and (min-width: 768px) {
+.swiper {
+  width: 100%;
+}
+
+.firstSwiper {
+  margin-block-end: 20px;
+}
+
+@media screen and (min-width: 1024px) {
   .sectionRules {
-    position: relative;
-    max-width: 100%;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 0;
   }
 
-  .sectionRulesSwiperWrapper {
-    height: 426px;
+  
+  .sectionRulesTitle {
+    max-height: 40px;
+    margin-block-start: 35px;
+    margin-block-end: 72px;
   }
+
+  .swiper {
+    margin: 0;
+  }
+
+  .firstSwiper {
+    max-width: 427px;
+    margin-block-end: 0;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    justify-items: flex-start;
+  }
+  
 }

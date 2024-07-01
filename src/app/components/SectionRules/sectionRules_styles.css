@@ -1,23 +1,30 @@
 .sectionRulesTitle {
-  width: 100%;
+  color: var(--brand-secondary, #746C7B);
+  font-family: "Gotham Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
   text-align: left;
-  color: var(--Brand-Secondary, #746C7B);
 }
 
 @media screen and (min-width: 768px) {
   .sectionRulesTitle {
-    max-width: 280px;
-    position: absolute;
-    top: 33px;
-    left: 55%;
+    font-size: 34px;
     line-height: 40px;
   }
 }
 
+
 @media screen and (min-width: 1024px) {
   .sectionRulesTitle {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .sectionRulesTitle {
     max-width: 100%;
-    left: 18%;
-    text-align: center;
   }
 }

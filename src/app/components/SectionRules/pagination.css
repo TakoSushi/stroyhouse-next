@@ -1,0 +1,128 @@
+.pagination {
+  width: 343px;
+  height: 80px;
+  display: flex;
+  list-style: none;
+
+  font-family: 
+    "Gotham Pro",
+    system-ui,
+    -apple-system,
+    Arial,
+    sans-serif;
+  color: var(--brand-secondary, #746C7B);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+
+  padding: 16px 0;
+  margin: 0 auto;
+}
+
+.page-item {
+  border-radius: 50%
+}
+
+.page-link {
+  border: none;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.pagination .page-link {
+  display: flex;
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  
+  text-decoration: none;
+  margin: 0;
+  
+  justify-content: center;
+  align-items: center;
+  color: var(--brand-secondary, #746C7B);
+  background-color:transparent;
+  border-radius: 50%;
+  
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+
+@media (hover: hover) {
+  .page-link:hover {
+    opacity: .7;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .25s;
+  }
+}
+
+.page-item.active > .page-link:hover {
+  cursor: default;
+  opacity: 1;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .pagination .page-link {
+    transition: none;
+  }
+}
+.pagination .page-link:hover {
+  z-index: 2;
+  opacity: .7;
+}
+.pagination .page-link:focus {
+  z-index: 3;
+}
+.pagination .active > .page-link {
+  z-index: 3;
+  border: 1px solid var(--brand-secondary, #746C7B);
+}
+
+.page-item:not(:first-child) .page-link {
+  margin-left: 0;
+}
+
+.pagination .disabled > .page-link {
+  background-color: transparent;
+}
+
+ .pagination .disabled > .page-link[aria-label="Next"],
+ .pagination .disabled > .page-link[aria-label="Previous"] {
+  display: none;
+}
+
+.pagination.justify-content-start {
+  justify-content: flex-start;
+}
+
+.pagination.justify-content-end {
+  justify-content: flex-end;
+}
+
+.pagination.justify-content-center {
+  justify-content: center;
+}
+
+@media screen and (min-width: 427px) {
+  .pagination {
+    width: 100%;
+  }  
+}
+
+@media screen and (min-width: 1024px) {
+  .pagination {
+    width: 384px;
+    margin: 0;
+  }  
+}

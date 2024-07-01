@@ -1,0 +1,22 @@
+.ruleCardTextBlock {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.ruleCardTitle {
+  max-width: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .ruleCardTitle {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ruleCardTextBlock {
+    gap: 16px
+  }
+}
