@@ -38,9 +38,9 @@ export function SectionAboutCompany() {
                 className="f-carousel__slide"
                 data-fancybox="gallery"
                 /* В data-src указываем путь до полноразмерной картинки, которая будет отображаться в открытом слайдере  */
-                data-src="/_next/static/media/aboutCompanyGallary1_full.jpg"
+                data-src="./_next/static/media/aboutCompanyGallary1_full.jpg"
                 /* В data-thumb-src указываем путь до малоразмерной картинки, которая будет отображаться в качестве превью  */
-                data-thumb-src="/_next/static/media/aboutCompanyGallary1_140.jpg"
+                data-thumb-src="./_next/static/media/aboutCompanyGallary1_140.jpg"
               >
                 <Image
                   className="carouselSlide"
@@ -52,8 +52,8 @@ export function SectionAboutCompany() {
               <div
                 className="f-carousel__slide"
                 data-fancybox="gallery"
-                data-src="/_next/static/media/aboutCompanyGallary2_full.jpg"
-                data-thumb-src="/_next/static/media/aboutCompanyGallary2_140.jpg"
+                data-src="./_next/static/media/aboutCompanyGallary2_full.jpg"
+                data-thumb-src="./_next/static/media/aboutCompanyGallary2_140.jpg"
               >
                 <Image
                   alt=""
@@ -64,8 +64,8 @@ export function SectionAboutCompany() {
               <div
                 className="f-carousel__slide"
                 data-fancybox="gallery"
-                data-src="/_next/static/media/aboutCompanyGallary3_full.jpg"
-                data-thumb-src="/_next/static/media/aboutCompanyGallary3_140.jpg"
+                data-src="./_next/static/media/aboutCompanyGallary3_full.jpg"
+                data-thumb-src="./_next/static/media/aboutCompanyGallary3_140.jpg"
               >
                 <Image
                   alt=""
@@ -76,8 +76,8 @@ export function SectionAboutCompany() {
               <div
                 className="f-carousel__slide"
                 data-fancybox="gallery"
-                data-src="/_next/static/media/aboutCompanyGallary4_full.jpg"
-                data-thumb-src="/_next/static/media/aboutCompanyGallary4_140.jpg"
+                data-src="./_next/static/media/aboutCompanyGallary4_full.jpg"
+                data-thumb-src="./_next/static/media/aboutCompanyGallary4_140.jpg"
               >
                 <Image
                   alt=""
@@ -88,8 +88,8 @@ export function SectionAboutCompany() {
               <div
                 className="f-carousel__slide"
                 data-fancybox="gallery"
-                data-src="/_next/static/media/aboutCompanyGallary5_full.jpg"
-                data-thumb-src="/_next/static/media/aboutCompanyGallary5_140.jpg"
+                data-src="./_next/static/media/aboutCompanyGallary5_full.jpg"
+                data-thumb-src="./_next/static/media/aboutCompanyGallary5_140.jpg"
               >
                 <Image
                   alt=""
