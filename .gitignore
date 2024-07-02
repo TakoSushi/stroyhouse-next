@@ -10,8 +10,14 @@
 /coverage
 
 # next.js
-/.next/
-\!/.next/static/media/*
+/*
+!/.next/
+/.next/*
+!/.next/static
+/.next/static/*
+!/.next/static/media
+/.next/static/media/*
+!/.next/static/media/*.jpg
 /out/
 
 # production
