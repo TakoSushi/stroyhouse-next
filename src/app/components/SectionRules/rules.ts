@@ -1,16 +1,15 @@
-import cardImg1 from '../../../../public/images/rulesCompanyGallary1.jpg';
-import img1 from "../../../../public/images/aboutCompanyGallary1.jpg";
-import img2 from "../../../../public/images/aboutCompanyGallary2.jpg";
-import img3 from "../../../../public/images/aboutCompanyGallary3.jpg";
-import img4 from "../../../../public/images/aboutCompanyGallary4.jpg";
-import img5 from "../../../../public/images/aboutCompanyGallary5.jpg";
+import img1 from "../../../../public/images/aboutCompanyGallary1_606.jpg";
+import img2 from "../../../../public/images/aboutCompanyGallary2_606.jpg";
+import img3 from "../../../../public/images/aboutCompanyGallary3_606.jpg";
+import img4 from "../../../../public/images/aboutCompanyGallary4_606.jpg";
+import img5 from "../../../../public/images/aboutCompanyGallary5_606.jpg";
 
 import { TRuleCard } from "@/app/types/entitiesTypes";
 
 
 export const rules: TRuleCard[] = [
   {
-    cardImg: cardImg1,
+    cardImg: img1,
     cardTitle: 'Беспрецедентное качество',
     cardDescription: 'Мы не никогда и нигде не экономим и не оптимизируем. Это основа нашей работы. Мы не зарабатываем на материалах. К нашей работе не докопаться, У нас независимый технадзор, клиент может ещё один нанимать если ему так спокойнее. Без недостатков без ошибок — безупречно',
     imgAlt: "Вставьте описание картинки",
