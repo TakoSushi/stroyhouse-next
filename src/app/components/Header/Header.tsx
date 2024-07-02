@@ -26,6 +26,7 @@ export function Header() {
 
   return (
     <header className="header">
+      <span className="headerBackground" />
       <a href="#" className="headerLogo"  target="_self"></a>
       <div className="headerBtnsBlock">
         <ButtonCommon classSpecify="headerQuestionBtn">Задать вопрос</ButtonCommon>
@@ -39,7 +40,6 @@ export function Header() {
 
         <MenuOffCanvas handleClose={handleClose} show={show}/>
       </div>
-
     </header>
   );
 }

@@ -40,6 +40,8 @@
   --brand-terry-opacity-90: rgba(124, 147, 115, 0.9);
   --brand-terry-opacity-80: rgba(124, 147, 115, 0.8);
   --background-white-opacity-75: rgba(255, 255, 255, 0.75);
+  --background-white-opacity-85: rgba(255, 255, 255, 0.85);
+  --background-white-opacity-30: rgba(255, 255, 255, 0.30);
 
   /* Gray */
   --gray-50: #fff;

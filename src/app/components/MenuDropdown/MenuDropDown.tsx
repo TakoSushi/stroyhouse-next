@@ -9,8 +9,8 @@ interface ICustomToogleProps {
   onClick: (e: React.MouseEvent<HTMLElement>) => void;
 }
 function CustomToogle({ children, onClick }: ICustomToogleProps, ref: LegacyRef<HTMLAnchorElement>) {
-    return (
-      <a
+  return (
+    <a
       className="linkCommon headerNavMenuListLink dropDownCustomToogle"
       href="#"
       ref={ref}
@@ -27,7 +27,7 @@ function CustomToogle({ children, onClick }: ICustomToogleProps, ref: LegacyRef<
 
 
 export function MenuDropDown() {
-  
+
   const CustomToggle = forwardRef(CustomToogle);
 
   return (
@@ -35,14 +35,19 @@ export function MenuDropDown() {
       <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
         проекты
       </Dropdown.Toggle>
-
       <Dropdown.Menu >
-        <Dropdown.Item eventKey="1">Red</Dropdown.Item>
-        <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
-        <Dropdown.Item eventKey="3" active>
-          Orange
+        <Dropdown.Item eventKey="1" className='linkCommon'>
+          Усадьбы и комплексы
         </Dropdown.Item>
-        <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
+        <Dropdown.Item eventKey="2" className='linkCommon'>
+          Бани, комплексы, СПА
+        </Dropdown.Item>
+        <Dropdown.Item eventKey="3" className='linkCommon'>
+          1 этажные дома
+        </Dropdown.Item>
+        <Dropdown.Item eventKey="4" className='linkCommon'>
+          2 этажные дома
+        </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
