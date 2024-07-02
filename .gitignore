@@ -10,25 +10,12 @@
 /coverage
 
 # next.js
-/*
-!/.next/
-/.next/*
-!/.next/static
-/.next/static/*
-!/.next/static/media
-/.next/static/media/*
-!/.next/static/media/*.jpg
+/.next/
 /out/
 
 # production
 /build
-!/dist/
-/dist/*
-!/dist/static
-/dist/static/*
-!/dist/static/media
-/dist/static/media/*
-!/dist/static/media/*.jpg
+/dist
 
 # misc
 .DS_Store
