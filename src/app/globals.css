@@ -59,7 +59,7 @@
   /* Shadows */
   --box-shadow: rgba(120, 120, 120, 0.15);
 
-  max-width: 1440px;
+  max-width: 1600px;
   min-width: 375px;
   margin: 0 auto;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -137,7 +137,7 @@ p {
   /* 150% */
 }
 
-.lty-playbtn {
+/* .lty-playbtn {
   background: no-repeat center/122px 116px !important;
   background-image: url("../../public/icons/iconPlayWithText.png") !important;
 }
@@ -147,7 +147,7 @@ p {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .25s;
-}
+} */
 
 .sectionWrapper {
   width: 100%;
