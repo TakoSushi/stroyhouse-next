@@ -1,3 +1,11 @@
+# Сайт Стройхаус
+## Главная страница
+
+[Сайт проекта](https://takosushi-stroyhouse-next-81f2.twc1.net/)
+
+
+___
+Коментации по работе в dev mode.
 Run the development server:
 Что бы dev мод заработал нормально убедитеcь, что в файле next.config.mjs закоментирована строка
 
