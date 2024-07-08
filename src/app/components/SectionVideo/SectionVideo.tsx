@@ -1,20 +1,35 @@
-// import { YouTubeEmbed } from '@next/third-parties/google'
-import videoTamplate from "../../../../public/images/VideoTamplate.jpg"
+/* eslint-disable @next/next/no-img-element */
+'use client'
+import { motion } from "framer-motion"
+import Image from "next/image";
+import { Fancybox } from "../Fancybox/Fancybox";
+import thumbImg from '../../../../public/images/VideoTamplate.jpg'
 
 import "./sectionVideo_tamp.css"
-import Image from 'next/image'
+
 export function SectionVideo() {
   return <section className="sectionVideo">
-    <div className="sectionVideoPlayerWrapper">
-      <Image src={videoTamplate} alt='Видео'
-        className="sectionVideoPlayerContent" />
-      {/* <YouTubeEmbed
-        videoid="7PwMXIA4_RE"
-        playlabel="Смотреть видео"
-        params="controls=0&modestbranding=1&rel=0&"
-        // style="border-radius: 16px"
-        style="max-width: 100%; border-radius: 16px"
-      /> */}
-    </div>
+    <motion.div
+      className="sectionVideoPlayerWrapper"
+      viewport={{ once: true }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.3, }}
+    >
+      <Fancybox>
+        <a
+          className="sectionVideoPlayerLink"
+          href="https://www.youtube.com/watch?v=z2X2HaTvkl8"
+          data-fancybox
+          >
+          <span className="sectionVideoPlayButton"></span>
+          <Image
+            src={thumbImg}
+            alt="Смотреть видео о компании"
+            className="sectionVideoPlayerContent"
+          />
+        </a>
+      </Fancybox>
+    </motion.div>
   </section>
 }

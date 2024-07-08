@@ -1,4 +1,5 @@
 'use client'
+import { motion } from "framer-motion"
 import { useState } from 'react';
 import Script from 'next/script';
 import * as Tabs from '@radix-ui/react-tabs';
@@ -24,7 +25,13 @@ export function SectionMap() {
 
   return (
     <>
-      <div className="sectionWrapper">
+      <motion.div
+        className="sectionWrapper"
+        viewport={{ once: true }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7, }}
+      >
         <section className="sectionMap">
           <div className='sectionMapTextMargin'>
             <h3 className="sectionMapTitle">Наши офисы</h3>
@@ -58,7 +65,7 @@ export function SectionMap() {
           <div className="YMapBlock" id="mymap" style={hiddenMap1()}></div>
           <div className="YMapBlock" id="mymap2" style={hiddenMap2()}></div>
         </section >
-      </div >
+      </motion.div >
       <Script id='mymap' type="text/javascript" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A92a68f793435b1d2ea29a5f4da1f3a4b3fc56721776981b82e9a41be9d3d766c&amp;id=mymap&amp;scroll=false&amp;">
       </Script>
       <Script id='mymap2' type="text/javascript" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d3af420f77e196b28d19d53d076000b201cca03aeee6a1b50ace038c205e35d&amp;&amp;id=mymap2&amp;lang=ru_RU&amp;scroll=false&amp;">

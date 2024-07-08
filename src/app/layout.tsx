@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "./styles/scss/bootstrap.scss";
 import "react-phone-input-2/lib/style.css";
 import "./globals.css";
 import "./styles.css";

@@ -1,4 +1,5 @@
 'use client'
+import { motion, useScroll } from "framer-motion";
 import { useEffect, useState } from 'react';
 import { MenuOffCanvas } from '../MenuOffCanvas/MenuOffCanvas';
 import { ButtonCommon } from "../ButtonCommon/ButtonCommon";
@@ -25,7 +26,11 @@ export function Header() {
   }, [show]);
 
   return (
-    <header className="header">
+    <motion.header
+      className="header"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+    >
       <span className="headerBackground" />
       <a href="#" className="headerLogo"  target="_self"></a>
       <div className="headerBtnsBlock">
@@ -40,6 +45,6 @@ export function Header() {
 
         <MenuOffCanvas handleClose={handleClose} show={show}/>
       </div>
-    </header>
+    </motion.header>
   );
 }

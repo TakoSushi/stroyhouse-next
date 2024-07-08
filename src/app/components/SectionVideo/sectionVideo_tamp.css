@@ -6,7 +6,14 @@
 }
 
 .sectionVideoPlayerWrapper {
-  background-color: blueviolet;
+  background-color: var(--gray-100, #f9f9f9);
+}
+
+.sectionVideoPlayerLink {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .sectionVideoPlayerContent {
@@ -16,8 +23,56 @@
   object-fit: cover;
 }
 
+/* .sectionVideoPlayerButton {
+  position: relative;
+} */
+
+.sectionVideoPlayButton::before{
+  content: "";
+  display: block;
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: var(--gray-50, #fff);
+  background-image: url("../../../../public/icons/iconPlay.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.sectionVideoPlayButton::after{
+  content: "смотреть";
+  color: var(--gray-50, #fff);
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  
+  position: absolute;
+  top: calc(50% + 56px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sectionVideoPlayButton:hover::before,
+.sectionVideoPlayButton:hover::after{
+  transform: scale(1.05) translate(-50%, -50%);
+}
+
 @media screen and (min-width: 768px) {
   .sectionVideoPlayerContent {
+    max-height: 740px;
     aspect-ratio: 1440 / 740;
   }
 }

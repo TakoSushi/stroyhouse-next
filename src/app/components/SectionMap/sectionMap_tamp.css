@@ -7,13 +7,16 @@
   display: flex;
   border-radius: 16px;
 }
+  
+.sectionMapTabList {
+  margin-block-end: 20px;
+}
 
 .sectionMapAdressBlock {
   max-width: 378px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-block-start: 20px;
 }
 
 .sectionMapTextMargin{
@@ -59,19 +62,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  .sectionMap {
+  .sectionMapAdressBlock {
+    max-width: 100%;
     flex-direction: row;
-    align-items: center;
-    padding: 40px;
+    justify-content: space-between;
   }
 
-  .sectionMapTextMargin{
-    margin: 0 126px 0 0;
+  .sectionMapAdressTime {
+    min-width: 220px;
   }
-  
-  .sectionMapAdressBlock {
-    gap: 40px;
-    padding-block-start: 0;
+
+  .sectionMapDescript {
+    max-width: 500px;
   }
   
   .sectionMapTabList {
@@ -81,5 +83,23 @@
 
   .YMapBlock {
     height: 440px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionMap {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .sectionMapTextMargin{
+    margin: 0 126px 20px 0;
+  }
+
+  .sectionMapAdressBlock {
+    max-width: 378px;
+    flex-direction: column;
+    gap: 40px;
   }
 }

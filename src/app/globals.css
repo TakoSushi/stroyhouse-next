@@ -59,7 +59,7 @@
   /* Shadows */
   --box-shadow: rgba(120, 120, 120, 0.15);
 
-  max-width: 1440px;
+  max-width: 1600px;
   min-width: 375px;
   margin: 0 auto;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

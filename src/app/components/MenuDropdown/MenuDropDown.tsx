@@ -1,41 +1,24 @@
-import { LegacyRef, forwardRef } from 'react';
+import { useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { DropDawnToogleSvg } from '../../ui/Icons/DropDawnToogleSvg';
 
 import "./menuDropDown_tamp.css";
 
-interface ICustomToogleProps {
-  children: React.ReactNode;
-  onClick: (e: React.MouseEvent<HTMLElement>) => void;
-}
-function CustomToogle({ children, onClick }: ICustomToogleProps, ref: LegacyRef<HTMLAnchorElement>) {
-  return (
-    <a
-      className="linkCommon headerNavMenuListLink dropDownCustomToogle"
-      href="#"
-      ref={ref}
-      onClick={(e) => {
-        e.preventDefault();
-        onClick(e);
-      }}
-    >
-      {children}
-      <DropDawnToogleSvg />
-    </a>
-  );
-}
-
-
 export function MenuDropDown() {
-
-  const CustomToggle = forwardRef(CustomToogle);
+  const [show, setShow] = useState(false);
 
   return (
-    <Dropdown>
-      <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-        проекты
+    <Dropdown
+      show={show}
+      onClick={() => setShow(!show)}
+      onMouseEnter={() => setShow(true)}
+      onMouseLeave={() => setShow(false)}
+    >
+      <Dropdown.Toggle className='linkCommon dropdownTransition'>
+        <span className="headerNavMenuListLink dropDownCustomToogle">проекты<DropDawnToogleSvg /></span>
       </Dropdown.Toggle>
-      <Dropdown.Menu >
+      <Dropdown.Menu>
+        <div className='menuDropDownItems'>
         <Dropdown.Item eventKey="1" className='linkCommon'>
           Усадьбы и комплексы
         </Dropdown.Item>
@@ -48,6 +31,7 @@ export function MenuDropDown() {
         <Dropdown.Item eventKey="4" className='linkCommon'>
           2 этажные дома
         </Dropdown.Item>
+        </div>
       </Dropdown.Menu>
     </Dropdown>
   );

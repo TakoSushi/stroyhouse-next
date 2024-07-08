@@ -3,6 +3,7 @@
   box-shadow: 0px 0px 40px 0px var(--box-shadow);
   flex-direction: column;
   justify-content: space-between;
+  align-items: center; 
   gap: 20px;
   width: 100%;
   display: flex;
@@ -11,7 +12,7 @@
 }
 
 .sectionAboutCompanyTextWrapper {
-  max-width: 407px;
+  /* max-width: 407px; */
 }
 
 .sectionAboutCompanyPreTitle {
@@ -79,14 +80,22 @@
   bottom: 0;
   cursor: pointer;
 }
+
 .sectionAboutSliderContainer::before {
   left: 0;
 }
+
 .sectionAboutSliderContainer::after {
   right: 0;
   transform: rotateZ(180deg);
 }
 
+@media screen and (min-width: 568px) {
+  .sectionAboutCompanyTitle {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .sectionAboutCompany {
@@ -97,18 +106,8 @@
     padding: 40px;
   }
 
-  .sectionAboutCompanyTextWrapper {
-    max-width: 480px;
-  }
-
   .sectionAboutCompanyPreTitle {
     padding-block-end: 16px;
-  }
-
-  .sectionAboutCompanyTitle {
-    max-width: 400px;
-    height: auto;
-    padding-block-end: 72px;
   }
 
   .sectionAboutSliderContainer {
@@ -143,15 +142,31 @@
     border-radius: 16px;
   }
 
-.sectionAboutSliderContainer::before,
-.sectionAboutSliderContainer::after {
-  height: 140px;
+  .sectionAboutSliderContainer::before,
+  .sectionAboutSliderContainer::after {
+    height: 140px;
+  }
 }
+
+
+@media screen and (min-width: 800px) {
+  .sectionAboutCompanyTextWrapper {
+    max-width: 100%;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
   .sectionAboutCompany {
     flex-direction: row;
-    align-items: center;
+  }
+
+  .sectionAboutCompanyTextWrapper {
+    max-width: 480px;
+  }
+  
+  .sectionAboutCompanyTitle {
+    max-width: 400px;
+    padding-block-end: 72px;
   }
 }
