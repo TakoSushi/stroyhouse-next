@@ -32,6 +32,7 @@
 .sectionAboutSliderContainer {
   position: relative;
   max-width: 606px;
+  width: 100%;
 }
 
 .f-carousel {
