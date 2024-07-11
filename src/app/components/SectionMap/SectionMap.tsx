@@ -46,14 +46,14 @@ export function SectionMap() {
               </Tabs.List>
 
               <Tabs.Content value="tab1" className="sectionMapAdressBlock">
-                <div>
+                <div className="sectionMapAdressTimeBlock">
                   <p className="sectionMapAdressTime">Москва, проспект Мира, 36с1</p>
                   <p className="sectionMapAdressTime">Пн - Пт: с 10:00 до 19:00</p>
                 </div>
                 <p className="sectionMapDescript" > Офис А-класса в центре Москвы. Обсудим финансы, архитектурные решения и познакомимся.</p>
               </Tabs.Content>
               <Tabs.Content value="tab2" className="sectionMapAdressBlock">
-                <div>
+                <div className="sectionMapAdressTimeBlock">
                   <p className="sectionMapAdressTime">Московская область, Истринский район, Веледниково, улица Живописная, дом 25</p>
                   <p className="sectionMapAdressTime">Пн - Пт: с 10:00 до 19:00</p>
                   <p className="sectionMapAdressTime">Сб.: с 11:00 до 17:00</p>

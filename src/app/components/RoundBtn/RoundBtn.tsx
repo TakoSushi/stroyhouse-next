@@ -9,8 +9,10 @@ interface IRoundBtn {
 export function RoundBtn({ children, onClick, classSpecify = '', type = "button" }: IRoundBtn) {
 
   return (
-    <button type={type} className={`RoundBtn ${classSpecify}`} onClick={onClick}>
-      {children}
-    </button>
+    <a href="tel:+74956455430" >
+      <button type={type} className={`RoundBtn ${classSpecify}`} onClick={onClick}>
+        {children}
+      </button>
+    </a>
   );
 }

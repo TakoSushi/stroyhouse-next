@@ -137,18 +137,6 @@ p {
   /* 150% */
 }
 
-.lty-playbtn {
-  background: no-repeat center/122px 116px !important;
-  background-image: url("../../public/icons/iconPlayWithText.png") !important;
-}
-
-.lty-playbtn:hover {
-  opacity: .9;
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-  transition-duration: .25s;
-}
-
 .sectionWrapper {
   width: 100%;
   padding: 0 16px;

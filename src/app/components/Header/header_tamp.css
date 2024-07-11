@@ -43,6 +43,31 @@
   display: none;
 }
 
+.headerNavMenuListLink {
+  display: block;
+  max-width: 343px;
+  width: 100%;
+  padding: 14px 16px 10px 16px;
+  border-radius: 64px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .headerNavMenuListLink {
+    transition-timing-function: ease;
+    transition-duration: .8s;
+  }
+  
+  .headerNavMenuListLink:hover {
+    opacity: 1;
+    transition-property: background-color opacity;
+    background-color: var(--background-white-opacity-85, rgba(255, 255, 255, 0.85));
+  }
+}
+
+.headerNavMenuListLink:active {
+  opacity: .7;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     width: calc(100% - 128px);
@@ -71,10 +96,20 @@
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    padding: 16px 24px;
+  }
+
+  .headerQuestionBtn {
+    padding: 12px 24px 10px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .headerBtnsBlock {
     width: 100%;
-    gap: 16px;
+    gap: 12px;
     flex-direction: row-reverse;
   }
 }

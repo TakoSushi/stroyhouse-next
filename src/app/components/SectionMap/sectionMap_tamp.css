@@ -19,6 +19,14 @@
   gap: 20px;
 }
 
+.sectionMapAdressTimeBlock {
+  height: 108px;
+}
+
+.sectionMapDescript {
+  flex: 1 1 78px;
+}
+
 .sectionMapTextMargin{
   margin: 0 0 20px 0;
 }
@@ -67,6 +75,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .sectionMapAdressTimeBlock {
+
+    flex: 1 1 630px;
+  }
 
   .sectionMapAdressTime {
     min-width: 220px;
@@ -74,6 +86,7 @@
 
   .sectionMapDescript {
     max-width: 500px;
+    flex: 1 1 100%;
   }
   
   .sectionMapTabList {
@@ -101,5 +114,14 @@
     max-width: 378px;
     flex-direction: column;
     gap: 40px;
+  }
+
+  .sectionMapAdressTimeBlock {
+
+    flex: 1 1 108px;
+  }
+
+  .sectionMapAdressTime {
+    min-width: 220px;
   }
 }
